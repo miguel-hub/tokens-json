@@ -457,7 +457,7 @@
           "type": "color"
         },
         "200miguel": {
-          "value": "{colors.orange.600}",
+          "value": "#37eb34",
           "type": "color"
         }
       }
