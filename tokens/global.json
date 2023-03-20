@@ -51,7 +51,16 @@
       },
       "950MiguelV3": {
         "value": "#02de53",
-        "type": "color"
+        "type": "color",
+        "$extensions": {
+          "studio.tokens": {
+            "modify": {
+              "type": "darken",
+              "value": "0.4",
+              "space": "hsl"
+            }
+          }
+        }
       }
     },
     "blue": {
