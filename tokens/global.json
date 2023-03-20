@@ -155,5 +155,19 @@
         "type": "color"
       }
     }
+  },
+  "Test2": {
+    "value": "{_colors.red.600}",
+    "type": "color",
+    "description": "New token with color modifier\n",
+    "$extensions": {
+      "studio.tokens": {
+        "modify": {
+          "type": "lighten",
+          "value": "0.5",
+          "space": "lch"
+        }
+      }
+    }
   }
 }
