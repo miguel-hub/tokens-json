@@ -55,9 +55,9 @@
         "$extensions": {
           "studio.tokens": {
             "modify": {
-              "type": "darken",
-              "value": "0.4",
-              "space": "hsl"
+              "type": "lighten",
+              "value": "0.5",
+              "space": "p3"
             }
           }
         }
