@@ -1,808 +1,3993 @@
 {
-  "core": {
-    "dimension": {
-      "scale": {
-        "value": "2",
-        "type": "dimension"
-      },
-      "xs": {
-        "value": "4",
-        "type": "dimension"
-      },
-      "sm": {
-        "value": "{dimension.xs} * {dimension.scale}",
-        "type": "dimension"
-      },
-      "md": {
-        "value": "{dimension.sm} * {dimension.scale}",
-        "type": "dimension"
-      },
-      "lg": {
-        "value": "{dimension.md} * {dimension.scale}",
-        "type": "dimension"
-      },
-      "xl": {
-        "value": "{dimension.lg} * {dimension.scale}",
-        "type": "dimension"
+  "global": {
+    "border": {
+      "radius": {
+        "01": {
+          "description": "Border Radius: 2px",
+          "themeable": "No",
+          "type": "borderRadius",
+          "value": "2px"
+        },
+        "02": {
+          "description": "Border Radius: 4px",
+          "themeable": "No",
+          "type": "borderRadius",
+          "value": "4px"
+        },
+        "03": {
+          "description": "Border Radius: 6px",
+          "themeable": "No",
+          "type": "borderRadius",
+          "value": "6px"
+        },
+        "04": {
+          "description": "Border Radius: 8px",
+          "themeable": "No",
+          "type": "borderRadius",
+          "value": "8px"
+        },
+        "05": {
+          "description": "Border Radius: 12px",
+          "themeable": "No",
+          "type": "borderRadius",
+          "value": "12px"
+        },
+        "06": {
+          "description": "Border Radius: 16px",
+          "themeable": "No",
+          "type": "borderRadius",
+          "value": "16px"
+        },
+        "07": {
+          "description": "Border Radius: 20px",
+          "themeable": "No",
+          "type": "borderRadius",
+          "value": "20px"
+        },
+        "08": {
+          "description": "Border Radius: 24px",
+          "themeable": "No",
+          "type": "borderRadius",
+          "value": "24px"
+        },
+        "09": {
+          "description": "Border Radius: 28px",
+          "themeable": "No",
+          "type": "borderRadius",
+          "value": "28px"
+        },
+        "circle": {
+          "description": "Border Radius: 50%",
+          "themeable": "No",
+          "type": "borderRadius",
+          "value": "50%"
+        }
       }
     },
-    "spacing": {
-      "xs": {
-        "value": "{dimension.xs}",
-        "type": "spacing"
+    "color": {
+      "accent": {
+        "01": {
+          "dark": {
+            "description": "Accent color 1 - Dark",
+            "themeable": "No",
+            "type": "color",
+            "value": "#852D01"
+          },
+          "darker": {
+            "description": "Accent color 1 - Darker",
+            "themeable": "No",
+            "type": "color",
+            "value": "#331505"
+          },
+          "default": {
+            "description": "Accent color 1",
+            "themeable": "No",
+            "type": "color",
+            "value": "#CF4500"
+          },
+          "light": {
+            "description": "Accent color 1- Light",
+            "themeable": "No",
+            "type": "color",
+            "value": "#D0805B"
+          }
+        },
+        "02": {
+          "description": "Accent color 2",
+          "themeable": "No",
+          "type": "color",
+          "value": "#F37338"
+        },
+        "03": {
+          "description": "Accent color 3",
+          "themeable": "No",
+          "type": "color",
+          "value": "#F38B00"
+        },
+        "04": {
+          "description": "Accent color 4",
+          "themeable": "No",
+          "type": "color",
+          "value": "#FFC61E"
+        },
+        "05": {
+          "description": "Accent color 5",
+          "themeable": "No",
+          "type": "color",
+          "value": "#628020"
+        },
+        "06": {
+          "description": "Accent color 6",
+          "themeable": "No",
+          "type": "color",
+          "value": "#25836D"
+        },
+        "07": {
+          "description": "Accent color 7",
+          "themeable": "No",
+          "type": "color",
+          "value": "#D7373C"
+        }
       },
-      "sm": {
-        "value": "{dimension.sm}",
-        "type": "spacing"
-      },
-      "md": {
-        "value": "{dimension.md}",
-        "type": "spacing"
-      },
-      "lg": {
-        "value": "{dimension.lg}",
-        "type": "spacing"
-      },
-      "xl": {
-        "value": "{dimension.xl}",
-        "type": "spacing"
-      },
-      "multi-value": {
-        "value": "{dimension.sm} {dimension.xl}",
-        "type": "spacing",
-        "description": "You can have multiple values in a single spacing token. Read more on these: https://docs.tokens.studio/available-tokens/spacing-tokens#multi-value-spacing-tokens"
-      }
-    },
-    "borderRadius": {
-      "sm": {
-        "value": "4",
-        "type": "borderRadius"
-      },
-      "lg": {
-        "value": "8",
-        "type": "borderRadius"
-      },
-      "xl": {
-        "value": "16",
-        "type": "borderRadius"
-      },
-      "multi-value": {
-        "value": "{borderRadius.sm} {borderRadius.lg}",
-        "type": "borderRadius",
-        "description": "You can have multiple values in a single radius token. Read more on these: https://docs.tokens.studio/available-tokens/border-radius-tokens#single--multiple-values"
-      }
-    },
-    "colors": {
-      "black": {
-        "value": "#000000",
-        "type": "color"
-      },
-      "white": {
-        "value": "#ffffff",
-        "type": "color"
+      "gold": {
+        "01": {
+          "description": "Gold color 1",
+          "themeable": "No",
+          "type": "color",
+          "value": "#FCE8CC"
+        },
+        "02": {
+          "description": "Gold color 2",
+          "themeable": "No",
+          "type": "color",
+          "value": "#F9D199"
+        },
+        "03": {
+          "description": "Gold color 3",
+          "themeable": "No",
+          "type": "color",
+          "value": "#F7AD4C"
+        },
+        "04": {
+          "description": "Gold color 4",
+          "themeable": "No",
+          "type": "color",
+          "value": "#F38B00"
+        },
+        "05": {
+          "description": "Gold color 5",
+          "themeable": "No",
+          "type": "color",
+          "value": "#995600"
+        },
+        "06": {
+          "description": "Gold color 6",
+          "themeable": "No",
+          "type": "color",
+          "value": "#583300"
+        },
+        "07": {
+          "description": "Gold color 7",
+          "themeable": "No",
+          "type": "color",
+          "value": "#301C00"
+        }
       },
       "gray": {
-        "100": {
-          "value": "#f7fafc",
-          "type": "color"
+        "01": {
+          "description": "Canvas color - Gray 1",
+          "themeable": "No",
+          "type": "color",
+          "value": "#FCFBFA"
         },
-        "200": {
-          "value": "#edf2f7",
-          "type": "color"
+        "01-25": {
+          "description": "Canvas color - Gray 1.25",
+          "themeable": "No",
+          "type": "color",
+          "value": "#FAF7F5"
         },
-        "300": {
-          "value": "#e2e8f0",
-          "type": "color"
+        "01-5": {
+          "description": "Canvas color - Gray 1.5",
+          "themeable": "No",
+          "type": "color",
+          "value": "#F3F0EE"
         },
-        "400": {
-          "value": "#cbd5e0",
-          "type": "color"
+        "02": {
+          "description": "Canvas color - Gray 2",
+          "themeable": "No",
+          "type": "color",
+          "value": "#E8E5E1"
         },
-        "500": {
-          "value": "#a0aec0",
-          "type": "color"
+        "03": {
+          "description": "Gray tints and shades - Gray 3",
+          "themeable": "No",
+          "type": "color",
+          "value": "#B1ADA6"
         },
-        "600": {
-          "value": "#718096",
-          "type": "color"
+        "03-5": {
+          "description": "Gray tints and shades - Gray 3.5",
+          "themeable": "No",
+          "type": "color",
+          "value": "#96918B"
         },
-        "700": {
-          "value": "#4a5568",
-          "type": "color"
+        "04": {
+          "description": "Gray tints and shades - Gray 4",
+          "themeable": "No",
+          "type": "color",
+          "value": "#777470"
         },
-        "800": {
-          "value": "#2d3748",
-          "type": "color"
+        "04-5": {
+          "description": "Gray tints and shades - Gray 4.5",
+          "themeable": "No",
+          "type": "color",
+          "value": "#676561"
         },
-        "900": {
-          "value": "#1a202c",
-          "type": "color"
-        }
-      },
-      "red": {
-        "100": {
-          "value": "#fff5f5",
-          "type": "color"
+        "05": {
+          "description": "Canvas color - Gray 5",
+          "themeable": "No",
+          "type": "color",
+          "value": "#555250"
         },
-        "200": {
-          "value": "#fed7d7",
-          "type": "color"
+        "05-5": {
+          "description": "Gray tints and shades - Gray 5.5",
+          "themeable": "No",
+          "type": "color",
+          "value": "#444340"
         },
-        "300": {
-          "value": "#feb2b2",
-          "type": "color"
+        "06": {
+          "description": "Canvas color - Gray 6",
+          "themeable": "No",
+          "type": "color",
+          "value": "#323231"
         },
-        "400": {
-          "value": "#fc8181",
-          "type": "color"
+        "06-5": {
+          "description": "Gray tints and shades - Gray 6.5",
+          "themeable": "No",
+          "type": "color",
+          "value": "#222221"
         },
-        "500": {
-          "value": "#f56565",
-          "type": "color"
-        },
-        "600": {
-          "value": "#e53e3e",
-          "type": "color"
-        },
-        "700": {
-          "value": "#c53030",
-          "type": "color"
-        },
-        "800": {
-          "value": "#9b2c2c",
-          "type": "color"
-        },
-        "900": {
-          "value": "#742a2a",
-          "type": "color"
-        }
-      },
-      "orange": {
-        "100": {
-          "value": "#fffaf0",
-          "type": "color"
-        },
-        "200": {
-          "value": "#feebc8",
-          "type": "color"
-        },
-        "300": {
-          "value": "#fbd38d",
-          "type": "color"
-        },
-        "400": {
-          "value": "#f6ad55",
-          "type": "color"
-        },
-        "500": {
-          "value": "#ed8936",
-          "type": "color"
-        },
-        "600": {
-          "value": "#dd6b20",
-          "type": "color"
-        },
-        "700": {
-          "value": "#c05621",
-          "type": "color"
-        },
-        "800": {
-          "value": "#9c4221",
-          "type": "color"
-        },
-        "900": {
-          "value": "#7b341e",
-          "type": "color"
-        }
-      },
-      "yellow": {
-        "100": {
-          "value": "#fffff0",
-          "type": "color"
-        },
-        "200": {
-          "value": "#fefcbf",
-          "type": "color"
-        },
-        "300": {
-          "value": "#faf089",
-          "type": "color"
-        },
-        "400": {
-          "value": "#f6e05e",
-          "type": "color"
-        },
-        "500": {
-          "value": "#ecc94b",
-          "type": "color"
-        },
-        "600": {
-          "value": "#d69e2e",
-          "type": "color"
-        },
-        "700": {
-          "value": "#b7791f",
-          "type": "color"
-        },
-        "800": {
-          "value": "#975a16",
-          "type": "color"
-        },
-        "900": {
-          "value": "#744210",
-          "type": "color"
+        "07": {
+          "description": "Canvas color - Gray 7",
+          "themeable": "No",
+          "type": "color",
+          "value": "#141413"
         }
       },
       "green": {
-        "100": {
-          "value": "#f0fff4",
-          "type": "color"
+        "01": {
+          "description": "Green color 1",
+          "themeable": "No",
+          "type": "color",
+          "value": "#E8F1D5"
         },
-        "200": {
-          "value": "#c6f6d5",
-          "type": "color"
+        "02": {
+          "description": "Green color 2",
+          "themeable": "No",
+          "type": "color",
+          "value": "#B6CD7E"
         },
-        "300": {
-          "value": "#9ae6b4",
-          "type": "color"
+        "03": {
+          "description": "Green color 3",
+          "themeable": "No",
+          "type": "color",
+          "value": "#87A740"
         },
-        "400": {
-          "value": "#68d391",
-          "type": "color"
+        "04": {
+          "description": "Green color 4",
+          "themeable": "No",
+          "type": "color",
+          "value": "#628020"
         },
-        "500": {
-          "value": "#48bb78",
-          "type": "color"
+        "05": {
+          "description": "Green color 5",
+          "themeable": "No",
+          "type": "color",
+          "value": "#496019"
         },
-        "600": {
-          "value": "#38a169",
-          "type": "color"
+        "06": {
+          "description": "Green color 6",
+          "themeable": "No",
+          "type": "color",
+          "value": "#324113"
         },
-        "700": {
-          "value": "#2f855a",
-          "type": "color"
+        "07": {
+          "description": "Green color 7",
+          "themeable": "No",
+          "type": "color",
+          "value": "#1C2509"
+        }
+      },
+      "orange": {
+        "01": {
+          "description": "Orange color 1",
+          "themeable": "No",
+          "type": "color",
+          "value": "#FFE1D1"
         },
-        "800": {
-          "value": "#276749",
-          "type": "color"
+        "02": {
+          "description": "Orange color 2",
+          "themeable": "No",
+          "type": "color",
+          "value": "#FFAB82"
         },
-        "900": {
-          "value": "#22543d",
-          "type": "color"
+        "03": {
+          "description": "Orange color 3",
+          "themeable": "No",
+          "type": "color",
+          "value": "#F37338"
+        },
+        "04": {
+          "description": "Orange color 4",
+          "themeable": "No",
+          "type": "color",
+          "value": "#CF4500"
+        },
+        "05": {
+          "description": "Orange color 5",
+          "themeable": "No",
+          "type": "color",
+          "value": "#9A3A0A"
+        },
+        "06": {
+          "description": "Orange color 6",
+          "themeable": "No",
+          "type": "color",
+          "value": "#662808"
+        },
+        "07": {
+          "description": "Orange color 7",
+          "themeable": "No",
+          "type": "color",
+          "value": "#331505"
+        }
+      },
+      "red": {
+        "01": {
+          "description": "Red color 1",
+          "themeable": "No",
+          "type": "color",
+          "value": "#F8DDDE"
+        },
+        "02": {
+          "description": "Red color 2",
+          "themeable": "No",
+          "type": "color",
+          "value": "#F4A79F"
+        },
+        "03": {
+          "description": "Red color 3",
+          "themeable": "No",
+          "type": "color",
+          "value": "#E66F65"
+        },
+        "04": {
+          "description": "Red color 4",
+          "themeable": "No",
+          "type": "color",
+          "value": "#D7373C"
+        },
+        "05": {
+          "description": "Red color 5",
+          "themeable": "No",
+          "type": "color",
+          "value": "#A82226"
+        },
+        "06": {
+          "description": "Red color 6",
+          "themeable": "No",
+          "type": "color",
+          "value": "#7E191C"
+        },
+        "07": {
+          "description": "Red color 7",
+          "themeable": "No",
+          "type": "color",
+          "value": "#541113"
         }
       },
       "teal": {
-        "100": {
-          "value": "#e6fffa",
-          "type": "color"
+        "01": {
+          "description": "Teal color 1",
+          "themeable": "No",
+          "type": "color",
+          "value": "#DCF5EF"
         },
-        "200": {
-          "value": "#b2f5ea",
-          "type": "color"
+        "02": {
+          "description": "Teal color 2",
+          "themeable": "No",
+          "type": "color",
+          "value": "#88D3BF"
         },
-        "300": {
-          "value": "#81e6d9",
-          "type": "color"
+        "03": {
+          "description": "Teal color 3",
+          "themeable": "No",
+          "type": "color",
+          "value": "#4BAB94"
         },
-        "400": {
-          "value": "#4fd1c5",
-          "type": "color"
+        "04": {
+          "description": "Teal color 4",
+          "themeable": "No",
+          "type": "color",
+          "value": "#25836D"
         },
-        "500": {
-          "value": "#38b2ac",
-          "type": "color"
+        "05": {
+          "description": "Teal color 5",
+          "themeable": "No",
+          "type": "color",
+          "value": "#266555"
         },
-        "600": {
-          "value": "#319795",
-          "type": "color"
+        "06": {
+          "description": "Teal color 6",
+          "themeable": "No",
+          "type": "color",
+          "value": "#23473D"
         },
-        "700": {
-          "value": "#2c7a7b",
-          "type": "color"
-        },
-        "800": {
-          "value": "#285e61",
-          "type": "color"
-        },
-        "900": {
-          "value": "#234e52",
-          "type": "color"
+        "07": {
+          "description": "Teal color 7",
+          "themeable": "No",
+          "type": "color",
+          "value": "#1D2D27"
         }
       },
-      "blue": {
-        "100": {
-          "value": "#ebf8ff",
-          "type": "color"
-        },
-        "200": {
-          "value": "#bee3f8",
-          "type": "color"
-        },
-        "300": {
-          "value": "#90cdf4",
-          "type": "color"
-        },
-        "400": {
-          "value": "#63b3ed",
-          "type": "color"
-        },
-        "500": {
-          "value": "#4299e1",
-          "type": "color"
-        },
-        "600": {
-          "value": "#3182ce",
-          "type": "color"
-        },
-        "700": {
-          "value": "#2b6cb0",
-          "type": "color"
-        },
-        "800": {
-          "value": "#2c5282",
-          "type": "color"
-        },
-        "900": {
-          "value": "#2a4365",
-          "type": "color"
-        }
+      "white": {
+        "description": "White",
+        "themeable": "No",
+        "type": "color",
+        "value": "#FFFFFF"
       },
-      "indigo": {
-        "100": {
-          "value": "#ebf4ff",
-          "type": "color"
+      "yellow": {
+        "01": {
+          "description": "Yellow color 1",
+          "themeable": "No",
+          "type": "color",
+          "value": "#FFF4D1"
         },
-        "200": {
-          "value": "#c3dafe",
-          "type": "color"
+        "02": {
+          "description": "Yellow color 2",
+          "themeable": "No",
+          "type": "color",
+          "value": "#FFE8A5"
         },
-        "300": {
-          "value": "#a3bffa",
-          "type": "color"
+        "03": {
+          "description": "Yellow color 3",
+          "themeable": "No",
+          "type": "color",
+          "value": "#FFD863"
         },
-        "400": {
-          "value": "#7f9cf5",
-          "type": "color"
+        "04": {
+          "description": "Yellow color 4",
+          "themeable": "No",
+          "type": "color",
+          "value": "#FFC61E"
         },
-        "500": {
-          "value": "#667eea",
-          "type": "color"
+        "05": {
+          "description": "Yellow color 5",
+          "themeable": "No",
+          "type": "color",
+          "value": "#B28C16"
         },
-        "600": {
-          "value": "#5a67d8",
-          "type": "color"
+        "06": {
+          "description": "Yellow color 6",
+          "themeable": "No",
+          "type": "color",
+          "value": "#664F0C"
         },
-        "700": {
-          "value": "#4c51bf",
-          "type": "color"
-        },
-        "800": {
-          "value": "#434190",
-          "type": "color"
-        },
-        "900": {
-          "value": "#3c366b",
-          "type": "color"
-        }
-      },
-      "purple": {
-        "100": {
-          "value": "#faf5ff",
-          "type": "color"
-        },
-        "200": {
-          "value": "#e9d8fd",
-          "type": "color"
-        },
-        "300": {
-          "value": "#d6bcfa",
-          "type": "color"
-        },
-        "400": {
-          "value": "#b794f4",
-          "type": "color"
-        },
-        "500": {
-          "value": "#9f7aea",
-          "type": "color"
-        },
-        "600": {
-          "value": "#805ad5",
-          "type": "color"
-        },
-        "700": {
-          "value": "#6b46c1",
-          "type": "color"
-        },
-        "800": {
-          "value": "#553c9a",
-          "type": "color"
-        },
-        "900": {
-          "value": "#44337a",
-          "type": "color"
-        }
-      },
-      "pink": {
-        "100": {
-          "value": "#fff5f7",
-          "type": "color"
-        },
-        "300": {
-          "value": "{colors.gray.700}",
-          "type": "color"
-        },
-        "400": {
-          "value": "#f687b3",
-          "type": "color"
-        },
-        "500": {
-          "value": "#ed64a6",
-          "type": "color"
-        },
-        "600": {
-          "value": "#d53f8c",
-          "type": "color"
-        },
-        "700": {
-          "value": "#b83280",
-          "type": "color"
-        },
-        "800": {
-          "value": "#97266d",
-          "type": "color"
-        },
-        "900": {
-          "value": "#702459",
-          "type": "color"
-        },
-        "205miguel": {
-          "value": "#37eb34",
-          "type": "color"
+        "07": {
+          "description": "Yellow color 7",
+          "themeable": "No",
+          "type": "color",
+          "value": "#332805"
         }
       }
     },
     "opacity": {
-      "low": {
-        "value": "10%",
-        "type": "opacity"
+      "0": {
+        "description": "Gives 0% opacity to an element (Hides an element).",
+        "themeable": "No",
+        "type": "opacity",
+        "value": "0"
       },
-      "md": {
-        "value": "50%",
-        "type": "opacity"
+      "15": {
+        "description": "Gives 15% opacity to an element.",
+        "themeable": "No",
+        "type": "opacity",
+        "value": "0.15"
       },
-      "high": {
-        "value": "90%",
-        "type": "opacity"
+      "25": {
+        "description": "Gives 25% opacity to an element.",
+        "themeable": "No",
+        "type": "opacity",
+        "value": "0.25"
+      },
+      "50": {
+        "description": "Gives 50% opacity to an element.",
+        "themeable": "No",
+        "type": "opacity",
+        "value": "0.5"
+      },
+      "75": {
+        "description": "Gives 75% opacity to an element.",
+        "themeable": "No",
+        "type": "opacity",
+        "value": "0.75"
+      },
+      "100": {
+        "description": "Gives 100% opacity to an element.",
+        "themeable": "No",
+        "type": "opacity",
+        "value": "1"
+      }
+    },
+    "size": {
+      "1-x": {
+        "description": "Size: 4px",
+        "themeable": "No",
+        "type": "sizing",
+        "value": "4px"
+      },
+      "2-x": {
+        "description": "Size: 8px",
+        "themeable": "No",
+        "type": "sizing",
+        "value": "8px"
+      },
+      "3-x": {
+        "description": "Size: 12px",
+        "themeable": "No",
+        "type": "sizing",
+        "value": "12px"
+      },
+      "4-x": {
+        "description": "Size: 16px",
+        "themeable": "No",
+        "type": "sizing",
+        "value": "16px"
+      },
+      "5-x": {
+        "description": "Size: 20px",
+        "themeable": "No",
+        "type": "sizing",
+        "value": "20px"
+      },
+      "6-x": {
+        "description": "Size: 24px",
+        "themeable": "No",
+        "type": "sizing",
+        "value": "24px"
+      },
+      "7-x": {
+        "description": "Size: 28px",
+        "themeable": "No",
+        "type": "sizing",
+        "value": "28px"
+      },
+      "8-x": {
+        "description": "Size: 32px",
+        "themeable": "No",
+        "type": "sizing",
+        "value": "32px"
+      },
+      "9-x": {
+        "description": "Size: 36px",
+        "themeable": "No",
+        "type": "sizing",
+        "value": "36px"
+      },
+      "10-x": {
+        "description": "Size: 40px",
+        "themeable": "No",
+        "type": "sizing",
+        "value": "40px"
+      },
+      "11-x": {
+        "description": "Size: 44px",
+        "themeable": "No",
+        "type": "sizing",
+        "value": "44px"
+      },
+      "12-x": {
+        "description": "Size: 48px",
+        "themeable": "No",
+        "type": "sizing",
+        "value": "48px"
+      },
+      "13-x": {
+        "description": "Size: 52px",
+        "themeable": "No",
+        "type": "sizing",
+        "value": "52px"
+      },
+      "14-x": {
+        "description": "Size: 56px",
+        "themeable": "No",
+        "type": "sizing",
+        "value": "56px"
+      },
+      "15-x": {
+        "description": "Size: 60px",
+        "themeable": "No",
+        "type": "sizing",
+        "value": "60px"
+      },
+      "16-x": {
+        "description": "Size: 64px",
+        "themeable": "No",
+        "type": "sizing",
+        "value": "64px"
+      },
+      "17-x": {
+        "description": "Size: 68px",
+        "themeable": "No",
+        "type": "sizing",
+        "value": "68px"
+      },
+      "18-x": {
+        "description": "Size: 72px",
+        "themeable": "No",
+        "type": "sizing",
+        "value": "72px"
+      },
+      "19-x": {
+        "description": "Size: 76px",
+        "themeable": "No",
+        "type": "sizing",
+        "value": "76px"
+      },
+      "20-x": {
+        "description": "Size: 80px",
+        "themeable": "No",
+        "type": "sizing",
+        "value": "80px"
+      }
+    },
+    "space": {
+      "1-x": {
+        "description": "Space: 4px",
+        "themeable": "No",
+        "type": "spacing",
+        "value": "4px"
+      },
+      "2-x": {
+        "description": "Space: 8px",
+        "themeable": "No",
+        "type": "spacing",
+        "value": "8px"
+      },
+      "3-x": {
+        "description": "Space: 12px",
+        "themeable": "No",
+        "type": "spacing",
+        "value": "12px"
+      },
+      "4-x": {
+        "description": "Space: 16px",
+        "themeable": "No",
+        "type": "spacing",
+        "value": "16px"
+      },
+      "5-x": {
+        "description": "Space: 20px",
+        "themeable": "No",
+        "type": "spacing",
+        "value": "20px"
+      },
+      "6-x": {
+        "description": "Space: 24px",
+        "themeable": "No",
+        "type": "spacing",
+        "value": "24px"
+      },
+      "7-x": {
+        "description": "Space: 28px",
+        "themeable": "No",
+        "type": "spacing",
+        "value": "28px"
+      },
+      "8-x": {
+        "description": "Space: 32px",
+        "themeable": "No",
+        "type": "spacing",
+        "value": "32px"
+      },
+      "9-x": {
+        "description": "Space: 36px",
+        "themeable": "No",
+        "type": "spacing",
+        "value": "36px"
+      },
+      "10-x": {
+        "description": "Space: 40px",
+        "themeable": "No",
+        "type": "spacing",
+        "value": "40px"
+      },
+      "11-x": {
+        "description": "Space: 44px",
+        "themeable": "No",
+        "type": "spacing",
+        "value": "44px"
+      },
+      "12-x": {
+        "description": "Space: 48px",
+        "themeable": "No",
+        "type": "spacing",
+        "value": "48px"
+      },
+      "13-x": {
+        "description": "Space: 52px",
+        "themeable": "No",
+        "type": "spacing",
+        "value": "52px"
+      },
+      "14-x": {
+        "description": "Space: 56px",
+        "themeable": "No",
+        "type": "spacing",
+        "value": "56px"
+      },
+      "15-x": {
+        "description": "Space: 60px",
+        "themeable": "No",
+        "type": "spacing",
+        "value": "60px"
+      },
+      "16-x": {
+        "description": "Space: 64px",
+        "themeable": "No",
+        "type": "spacing",
+        "value": "64px"
+      },
+      "17-x": {
+        "description": "Space: 68px",
+        "themeable": "No",
+        "type": "spacing",
+        "value": "68px"
+      },
+      "18-x": {
+        "description": "Space: 72px",
+        "themeable": "No",
+        "type": "spacing",
+        "value": "72px"
+      },
+      "19-x": {
+        "description": "Space: 76px",
+        "themeable": "No",
+        "type": "spacing",
+        "value": "76px"
+      },
+      "20-x": {
+        "description": "Space: 80px",
+        "themeable": "No",
+        "type": "spacing",
+        "value": "80px"
+      }
+    },
+    "time": {
+      "moderate": {
+        "01": {
+          "description": "Micro-interactions, small expansion, short distance movements.",
+          "themeable": "No",
+          "type": "other",
+          "value": "150ms"
+        },
+        "02": {
+          "description": "Expansion, system communication, toast.",
+          "themeable": "No",
+          "type": "other",
+          "value": "240ms"
+        },
+        "fast": {
+          "01": {
+            "description": "Micro-interactions such as button and toggle.",
+            "themeable": "No",
+            "type": "other",
+            "value": "70ms"
+          },
+          "02": {
+            "description": "Micro-interactions such as fade.",
+            "themeable": "No",
+            "type": "other",
+            "value": "110ms"
+          }
+        }
+      },
+      "slow": {
+        "01": {
+          "description": "Large expansion, important system notifications.",
+          "themeable": "No",
+          "type": "other",
+          "value": "400ms"
+        },
+        "02": {
+          "description": "Background dimming.",
+          "themeable": "No",
+          "type": "other",
+          "value": "700ms"
+        }
+      }
+    },
+    "font": {
+      "body": {
+        "family": {
+          "bold": {
+            "description": "--StyleDictionary-- Font family for bold body text.",
+            "themeable": "Yes",
+            "type": "fontSizes",
+            "value": "{font.family.medium}"
+          },
+          "default": {
+            "description": "--StyleDictionary-- Default font family for body text.",
+            "themeable": "Yes",
+            "type": "fontSizes",
+            "value": "{font.family.regular}"
+          },
+          "narrow": {
+            "description": "--StyleDictionary-- Default font family for narrow/small text. Used on tooltip and notification",
+            "themeable": "Yes",
+            "type": "fontSizes",
+            "value": "{font.family.narrow}"
+          }
+        },
+        "letter-spacing": {
+          "description": "--StyleDictionary-- Default letter spacing for body text.",
+          "themeable": "No",
+          "type": "letterSpacing",
+          "value": "{letter.spacing.default}"
+        },
+        "line-height": {
+          "description": "--StyleDictionary-- Default line height for body text.",
+          "themeable": "No",
+          "type": "lineHeights",
+          "value": "{line.height.default}"
+        },
+        "size": {
+          "default": {
+            "description": "--StyleDictionary-- Default font size for body text.",
+            "themeable": "Yes",
+            "type": "fontFamilies",
+            "value": "{font.size.04}"
+          },
+          "large": {
+            "description": "--StyleDictionary-- Large font size for body text.",
+            "themeable": "Yes",
+            "type": "fontFamilies",
+            "value": "{font.size.06}"
+          },
+          "small": {
+            "description": "--StyleDictionary-- Small font size for body text.",
+            "themeable": "Yes",
+            "type": "fontFamilies",
+            "value": "{font.size.02}"
+          }
+        },
+        "weight": {
+          "bold": {
+            "description": "--StyleDictionary-- Bold font weight for body text.",
+            "themeable": "Yes",
+            "type": "fontWeights",
+            "value": "{font.weight.bold}"
+          },
+          "default": {
+            "description": "--StyleDictionary-- Default font weight for body text.",
+            "themeable": "Yes",
+            "type": "fontWeights",
+            "value": "{font.weight.default}"
+          }
+        }
+      },
+      "family": {
+        "bold": {
+          "description": "--StyleDictionary-- Default bold weight font used across application",
+          "themeable": "No",
+          "value": "MarkOffcForMC-Bold, MarkOffcForMC, Arial, Helvetica, sans-serif",
+          "type": "other"
+        },
+        "extra-light": {
+          "description": "--StyleDictionary-- Use Mark for MC for text slightly larger than 14-pixels in all digital applications.",
+          "themeable": "No",
+          "value": "MarkOffcForMC-ExtraLight, MarkOffcForMC, Arial, Helvetica, sans-serif",
+          "type": "other"
+        },
+        "eyebrow": {
+          "description": "--StyleDictionary-- Font family for headings (H1,H2 and display text)",
+          "themeable": "Yes",
+          "type": "fontFamilies",
+          "value": "MarkOffcForMC-Bold, MarkOffcForMC, Arial, Helvetica, sans-serif"
+        },
+        "heading": {
+          "description": "--StyleDictionary-- Font family for headings (H1,H2 and display text)",
+          "themeable": "Yes",
+          "type": "fontFamilies",
+          "value": "MarkOffcForMC-Light, MarkOffcForMC, Arial, Helvetica, sans-serif"
+        },
+        "light": {
+          "description": "--StyleDictionary-- Use Mark for MC for text slightly larger than 14-pixels in all digital applications.",
+          "themeable": "No",
+          "value": "MarkOffcForMC-Light, MarkOffcForMC, Arial, Helvetica, sans-serif",
+          "type": "other"
+        },
+        "medium": {
+          "description": "--StyleDictionary-- Use Mark for MC for text slightly larger than 14-pixels in all digital applications.",
+          "themeable": "No",
+          "value": "MarkOffcForMC-Medium, MarkOffcForMC, Arial, Helvetica, sans-serif",
+          "type": "other"
+        },
+        "narrow": {
+          "description": "--StyleDictionary-- Use Mark for MC Narrow for text smaller or equal to 14-pixels in all digital applications. It provides greater legibility for body copy, tight columns, or charts. 12-pixels is the minimum size for Narrow.",
+          "themeable": "No",
+          "value": "MarkForMCNrw, MarkOffcForMC, Arial, Helvetica, sans-serif",
+          "type": "other"
+        },
+        "narrow-bold": {
+          "description": "--StyleDictionary-- Use Mark for MC Narrow for text smaller or equal to 14-pixels in all digital applications. It provides greater legibility for body copy, tight columns, or charts. 12-pixels is the minimum size for Narrow.",
+          "themeable": "No",
+          "value": "MarkForMCNrw-Bold, MarkOffcForMC, Arial, Helvetica, sans-serif",
+          "type": "other"
+        },
+        "narrow-medium": {
+          "description": "--StyleDictionary-- Use Mark for MC Narrow for text smaller or equal to 14-pixels in all digital applications. It provides greater legibility for body copy, tight columns, or charts. 12-pixels is the minimum size for Narrow.",
+          "themeable": "No",
+          "value": "MarkForMCNrw-Medium, MarkOffcForMC, Arial, Helvetica, sans-serif",
+          "type": "other"
+        },
+        "regular": {
+          "description": "--StyleDictionary-- Use Mark for MC for text slightly larger than 14-pixels in all digital applications.",
+          "themeable": "No",
+          "value": "MarkOffcForMC, Arial, Helvetica, sans-serif",
+          "type": "other"
+        }
+      },
+      "heading": {
+        "family": {
+          "display": {
+            "01": {
+              "description": "--StyleDictionary-- Font family for Display 01.",
+              "themeable": "No",
+              "type": "fontFamilies",
+              "value": "{font.family.heading}"
+            },
+            "02": {
+              "description": "--StyleDictionary-- Font family for Display 02.",
+              "themeable": "No",
+              "type": "fontFamilies",
+              "value": "{font.family.heading}"
+            },
+            "03": {
+              "description": "--StyleDictionary-- Font family for Display 03.",
+              "themeable": "No",
+              "type": "fontFamilies",
+              "value": "{font.family.heading}"
+            }
+          },
+          "eyebrow": {
+            "01": {
+              "description": "--StyleDictionary-- Font family for small eyebrow text.",
+              "themeable": "No",
+              "type": "fontFamilies",
+              "value": "{font.family.eyebrow}"
+            },
+            "02": {
+              "description": "--StyleDictionary-- Font family for large eyebrow text.",
+              "themeable": "No",
+              "type": "fontFamilies",
+              "value": "{font.family.eyebrow}"
+            }
+          },
+          "level": {
+            "01": {
+              "description": "--StyleDictionary-- Font Family for Heading 1 (H1).",
+              "themeable": "No",
+              "type": "fontFamilies",
+              "value": "{font.family.heading}"
+            },
+            "02": {
+              "description": "--StyleDictionary-- Font Family for Heading 2 (H2).",
+              "themeable": "No",
+              "type": "fontFamilies",
+              "value": "{font.family.heading}"
+            },
+            "03": {
+              "description": "--StyleDictionary-- Font Family for Heading 3 (H3).",
+              "themeable": "No",
+              "type": "fontFamilies",
+              "value": "{font.body.family.default}"
+            },
+            "04": {
+              "description": "--StyleDictionary-- Font Family for Heading 4 (H4).",
+              "themeable": "No",
+              "type": "fontFamilies",
+              "value": "{font.body.family.default}"
+            },
+            "05": {
+              "description": "--StyleDictionary-- Font Family for Heading 5 (H5).",
+              "themeable": "No",
+              "type": "fontFamilies",
+              "value": "{font.body.family.default}"
+            },
+            "06": {
+              "description": "--StyleDictionary-- Font Family for Heading 6 (H6).",
+              "themeable": "No",
+              "type": "fontFamilies",
+              "value": "{font.body.family.bold}"
+            }
+          }
+        },
+        "letter-spacing": {
+          "display": {
+            "01": {
+              "description": "--StyleDictionary-- Letter spacing of Display 02.",
+              "themeable": "No",
+              "type": "letterSpacing",
+              "value": "{letter.spacing.default}"
+            },
+            "02": {
+              "description": "--StyleDictionary-- Letter spacing of Display 02.",
+              "themeable": "No",
+              "type": "letterSpacing",
+              "value": "{letter.spacing.default}"
+            },
+            "03": {
+              "description": "--StyleDictionary-- Letter spacing of Display 03.",
+              "themeable": "No",
+              "type": "letterSpacing",
+              "value": "{letter.spacing.default}"
+            }
+          },
+          "eyebrow": {
+            "01": {
+              "description": "--StyleDictionary-- Letter spacing for small eyebrow text.",
+              "themeable": "No",
+              "type": "letterSpacing",
+              "value": "{letter.spacing.eyebrow}"
+            },
+            "02": {
+              "description": "--StyleDictionary-- Letter spacing for small eyebrow text.",
+              "themeable": "No",
+              "type": "letterSpacing",
+              "value": "{letter.spacing.eyebrow}"
+            }
+          },
+          "level": {
+            "01": {
+              "description": "--StyleDictionary-- Letter spacing of Heading 1 (H1).",
+              "themeable": "No",
+              "type": "letterSpacing",
+              "value": "{letter.spacing.default}"
+            },
+            "02": {
+              "description": "--StyleDictionary-- Letter spacing of Heading 2 (H2).",
+              "themeable": "No",
+              "type": "letterSpacing",
+              "value": "{letter.spacing.default}"
+            },
+            "03": {
+              "description": "--StyleDictionary-- Letter spacing of Heading 3 (H3).",
+              "themeable": "No",
+              "type": "letterSpacing",
+              "value": "{letter.spacing.default}"
+            },
+            "04": {
+              "description": "--StyleDictionary-- Letter spacing of Heading 4 (H4).",
+              "themeable": "No",
+              "type": "letterSpacing",
+              "value": "{letter.spacing.default}"
+            },
+            "05": {
+              "description": "--StyleDictionary-- Letter spacing of Heading 5 (H5).",
+              "themeable": "No",
+              "type": "letterSpacing",
+              "value": "{letter.spacing.default}"
+            },
+            "06": {
+              "description": "--StyleDictionary-- Letter spacing of Heading 6 (H6).",
+              "themeable": "No",
+              "type": "letterSpacing",
+              "value": "{letter.spacing.default}"
+            }
+          }
+        },
+        "line-height": {
+          "display": {
+            "01": {
+              "description": "--StyleDictionary-- Line height of Display 01.",
+              "themeable": "No",
+              "type": "lineHeights",
+              "value": "{line.height.heading}"
+            },
+            "02": {
+              "description": "--StyleDictionary-- Line height of Display 02.",
+              "themeable": "No",
+              "type": "lineHeights",
+              "value": "{line.height.heading}"
+            },
+            "03": {
+              "description": "--StyleDictionary-- Line height of Display 03.",
+              "themeable": "No",
+              "type": "lineHeights",
+              "value": "{line.height.heading}"
+            }
+          },
+          "eyebrow": {
+            "01": {
+              "description": "--StyleDictionary-- Line Height for small eyebrow text.",
+              "themeable": "No",
+              "type": "lineHeights",
+              "value": "{line.height.heading}"
+            },
+            "02": {
+              "description": "--StyleDictionary-- Line Height for large eyebrow text.",
+              "themeable": "No",
+              "type": "lineHeights",
+              "value": "{line.height.heading}"
+            }
+          },
+          "level": {
+            "01": {
+              "description": "--StyleDictionary-- Line Height of Heading 1 (H1).",
+              "themeable": "No",
+              "type": "lineHeights",
+              "value": "{line.height.heading}"
+            },
+            "02": {
+              "description": "--StyleDictionary-- Line Height of Heading 2 (H2).",
+              "themeable": "No",
+              "type": "lineHeights",
+              "value": "{line.height.heading}"
+            },
+            "03": {
+              "description": "--StyleDictionary-- Line Height of Heading 3 (H3).",
+              "themeable": "No",
+              "type": "lineHeights",
+              "value": "{line.height.heading}"
+            },
+            "04": {
+              "description": "--StyleDictionary-- Line Height of Heading 4 (H4).",
+              "themeable": "No",
+              "type": "lineHeights",
+              "value": "{line.height.heading}"
+            },
+            "05": {
+              "description": "--StyleDictionary-- Line Height of Heading 5 (H5).",
+              "themeable": "No",
+              "type": "lineHeights",
+              "value": "{line.height.heading}"
+            },
+            "06": {
+              "description": "--StyleDictionary-- Line Height of Heading 6 (H6).",
+              "themeable": "No",
+              "type": "lineHeights",
+              "value": "{line.height.heading}"
+            }
+          }
+        },
+        "size": {
+          "display": {
+            "01": {
+              "description": "--StyleDictionary-- Font Size for Display 01.",
+              "themeable": "Yes",
+              "type": "fontSizes",
+              "value": "{font.size.15}"
+            },
+            "02": {
+              "description": "--StyleDictionary-- Font Size for Display 02.",
+              "themeable": "Yes",
+              "type": "fontSizes",
+              "value": "{font.size.13}"
+            },
+            "03": {
+              "description": "--StyleDictionary-- Font Size for Display 03.",
+              "themeable": "Yes",
+              "type": "fontSizes",
+              "value": "{font.size.11}"
+            }
+          },
+          "eyebrow": {
+            "01": {
+              "description": "--StyleDictionary-- Font size for small eyebrow text",
+              "themeable": "Yes",
+              "type": "fontSizes",
+              "value": "{font.body.size.small}"
+            },
+            "02": {
+              "description": "--StyleDictionary-- Font size for default eyebrow text",
+              "themeable": "Yes",
+              "type": "fontSizes",
+              "value": "{font.body.size.large}"
+            }
+          },
+          "level": {
+            "01": {
+              "description": "--StyleDictionary-- Font Size for Heading 1 (H1)",
+              "themeable": "Yes",
+              "type": "fontSizes",
+              "value": "{font.size.11}"
+            },
+            "02": {
+              "description": "--StyleDictionary-- Font Size for Heading 2 (H2)",
+              "themeable": "Yes",
+              "type": "fontSizes",
+              "value": "{font.size.10}"
+            },
+            "03": {
+              "description": "--StyleDictionary-- Font Size for Heading 3 (H3)",
+              "themeable": "Yes",
+              "type": "fontSizes",
+              "value": "{font.size.09}"
+            },
+            "04": {
+              "description": "--StyleDictionary-- Font Size for Heading 4 (H4)",
+              "themeable": "Yes",
+              "type": "fontSizes",
+              "value": "{font.size.08}"
+            },
+            "05": {
+              "description": "--StyleDictionary-- Font Size for Heading 5 (H5)",
+              "themeable": "Yes",
+              "type": "fontSizes",
+              "value": "{font.size.07}"
+            },
+            "06": {
+              "description": "--StyleDictionary-- Font Size for Heading 6 (H6)",
+              "themeable": "Yes",
+              "type": "fontSizes",
+              "value": "{font.size.06}"
+            }
+          }
+        },
+        "weight": {
+          "display": {
+            "01": {
+              "description": "--StyleDictionary-- Font family for Display 01.",
+              "themeable": "No",
+              "type": "fontFamilies",
+              "value": "{font.weight.default}"
+            },
+            "02": {
+              "description": "--StyleDictionary-- Font family for Display 02.",
+              "themeable": "No",
+              "type": "fontFamilies",
+              "value": "{font.weight.default}"
+            },
+            "03": {
+              "description": "--StyleDictionary-- Font family for Display 03.",
+              "themeable": "No",
+              "type": "fontFamilies",
+              "value": "{font.weight.default}"
+            }
+          },
+          "eyebrow": {
+            "01": {
+              "description": "--StyleDictionary-- Font family for small eyebrow text.",
+              "themeable": "No",
+              "type": "fontFamilies",
+              "value": "{font.weight.default}"
+            },
+            "02": {
+              "description": "--StyleDictionary-- Font family for large eyebrow text.",
+              "themeable": "No",
+              "type": "fontFamilies",
+              "value": "{font.weight.default}"
+            }
+          },
+          "level": {
+            "01": {
+              "description": "--StyleDictionary-- Font Family for Heading 1 (H1).",
+              "themeable": "No",
+              "type": "fontFamilies",
+              "value": "{font.weight.default}"
+            },
+            "02": {
+              "description": "--StyleDictionary-- Font Family for Heading 2 (H2).",
+              "themeable": "No",
+              "type": "fontFamilies",
+              "value": "{font.weight.default}"
+            },
+            "03": {
+              "description": "--StyleDictionary-- Font Family for Heading 3 (H3).",
+              "themeable": "No",
+              "type": "fontFamilies",
+              "value": "{font.weight.default}"
+            },
+            "04": {
+              "description": "--StyleDictionary-- Font Family for Heading 4 (H4).",
+              "themeable": "No",
+              "type": "fontFamilies",
+              "value": "{font.weight.default}"
+            },
+            "05": {
+              "description": "--StyleDictionary-- Font Family for Heading 5 (H5).",
+              "themeable": "No",
+              "type": "fontFamilies",
+              "value": "{font.weight.default}"
+            },
+            "06": {
+              "description": "--StyleDictionary-- Font Family for Heading 6 (H6).",
+              "themeable": "No",
+              "type": "fontFamilies",
+              "value": "{font.weight.default}"
+            }
+          }
+        }
+      },
+      "size": {
+        "10": {
+          "description": "--StyleDictionary-- Font size: 28px",
+          "themeable": "No",
+          "type": "fontSizes",
+          "value": "28px"
+        },
+        "11": {
+          "description": "--StyleDictionary-- Font size: 32px",
+          "themeable": "No",
+          "type": "fontSizes",
+          "value": "32px"
+        },
+        "12": {
+          "description": "--StyleDictionary-- Font size: 36px",
+          "themeable": "No",
+          "type": "fontSizes",
+          "value": "36px"
+        },
+        "13": {
+          "description": "--StyleDictionary-- Font size: 48px",
+          "themeable": "No",
+          "type": "fontSizes",
+          "value": "48px"
+        },
+        "14": {
+          "description": "--StyleDictionary-- Font size: 60px",
+          "themeable": "No",
+          "type": "fontSizes",
+          "value": "60px"
+        },
+        "15": {
+          "description": "--StyleDictionary-- Font size: 80px",
+          "themeable": "No",
+          "type": "fontSizes",
+          "value": "80px"
+        },
+        "01": {
+          "description": "--StyleDictionary-- Font size: 9px",
+          "themeable": "No",
+          "type": "fontSizes",
+          "value": "9px"
+        },
+        "02": {
+          "description": "--StyleDictionary-- Font size: 12px",
+          "themeable": "No",
+          "type": "fontSizes",
+          "value": "12px"
+        },
+        "03": {
+          "description": "--StyleDictionary-- Font size: 13px",
+          "themeable": "No",
+          "type": "fontSizes",
+          "value": "13px"
+        },
+        "04": {
+          "description": "--StyleDictionary-- Font size: 14px",
+          "themeable": "No",
+          "type": "fontSizes",
+          "value": "14px"
+        },
+        "05": {
+          "description": "--StyleDictionary-- Font size: 15px",
+          "themeable": "No",
+          "type": "fontSizes",
+          "value": "15px"
+        },
+        "06": {
+          "description": "--StyleDictionary-- Font size: 16px",
+          "themeable": "No",
+          "type": "fontSizes",
+          "value": "16px"
+        },
+        "07": {
+          "description": "--StyleDictionary-- Font size: 18px",
+          "themeable": "No",
+          "type": "fontSizes",
+          "value": "18px"
+        },
+        "08": {
+          "description": "--StyleDictionary-- Font size: 20px",
+          "themeable": "No",
+          "type": "fontSizes",
+          "value": "20px"
+        },
+        "09": {
+          "description": "--StyleDictionary-- Font size: 24px",
+          "themeable": "No",
+          "type": "fontSizes",
+          "value": "24px"
+        }
+      },
+      "weight": {
+        "bold": {
+          "description": "--StyleDictionary-- Use bold sparingly for subtitles, eyebrows, emphasis, and dates",
+          "themeable": "No",
+          "type": "fontWeights",
+          "value": "700"
+        },
+        "default": {
+          "description": "--StyleDictionary-- Normal font weight is used for body text and form inputs.",
+          "themeable": "No",
+          "type": "fontWeights",
+          "value": "400"
+        },
+        "light": {
+          "description": "--StyleDictionary-- Light font weight is used for headings.",
+          "themeable": "No",
+          "type": "fontWeights",
+          "value": "100"
+        },
+        "medium": {
+          "description": "--StyleDictionary-- Semi bold font weight is used for buttons.",
+          "themeable": "No",
+          "type": "fontWeights",
+          "value": "500"
+        }
+      }
+    },
+    "letter": {
+      "spacing": {
+        "default": {
+          "description": "--StyleDictionary-- Default letter spacing for all text.",
+          "themeable": "Yes",
+          "type": "letterSpacing",
+          "value": "0"
+        },
+        "eyebrow": {
+          "description": "--StyleDictionary-- Default letter spacing for all text.",
+          "themeable": "Yes",
+          "type": "letterSpacing",
+          "value": "1.8"
+        }
+      }
+    },
+    "line": {
+      "height": {
+        "1-25-x": {
+          "description": "--StyleDictionary-- Headings use a 1.25× multiplier",
+          "themeable": "No",
+          "type": "lineHeights",
+          "value": "125%"
+        },
+        "1-5-x": {
+          "description": "--StyleDictionary-- To ensure readability, Body uses a 1.5× multiplier",
+          "themeable": "No",
+          "type": "lineHeights",
+          "value": "150%"
+        },
+        "1-x": {
+          "description": "--StyleDictionary-- Line height for single line text elements displayed in components",
+          "themeable": "No",
+          "type": "lineHeights",
+          "value": "100%"
+        },
+        "default": {
+          "description": "--StyleDictionary-- Default line height.",
+          "themeable": "Yes",
+          "type": "lineHeights",
+          "value": "150%"
+        },
+        "heading": {
+          "description": "--StyleDictionary-- Headings line-height",
+          "themeable": "Yes",
+          "type": "lineHeights",
+          "value": "125%"
+        },
+        "single": {
+          "description": "--StyleDictionary-- Line height for single line text elements displayed in components",
+          "themeable": "Yes",
+          "type": "lineHeights",
+          "value": "100%"
+        }
+      }
+    }
+  },
+  "role": {
+    "backdrop": {
+      "color": {
+        "background": {
+          "description": "Background on overlay used with modals",
+          "themeable": "Yes",
+          "type": "color",
+          "value": "rgba(20,20,19,0.7)"
+        }
+      }
+    },
+    "border": {
+      "radius": {
+        "default": {
+          "description": "Default border radius for UI components",
+          "themeable": "Yes",
+          "type": "borderRadius",
+          "value": "{border.radius.02}"
+        },
+        "large": {
+          "description": "Large border radius for UI components",
+          "themeable": "Yes",
+          "type": "borderRadius",
+          "value": "{border.radius.04}"
+        },
+        "small": {
+          "description": "Small border radius for UI components",
+          "themeable": "Yes",
+          "type": "borderRadius",
+          "value": "{border.radius.01}"
+        }
+      }
+    },
+    "button": {
+      "border-radius": {
+        "description": "Button Border Radius",
+        "themeable": "Yes",
+        "type": "borderRadius",
+        "value": "{border.radius.07}"
+      }
+    },
+    "color": {
+      "action": {
+        "background": {
+          "disabled": {
+            "description": "Background color for disabled state of UI Elements such as tables, dropdowns...",
+            "themeable": "No",
+            "type": "color",
+            "value": "{color.action.disabled}"
+          },
+          "highlight": {
+            "description": "Background color of highlight interactive color. Used on date range in Calendar",
+            "themeable": "No",
+            "type": "color",
+            "value": "{color.orange.01}"
+          },
+          "hover": {
+            "description": "Background color for hover state of UI Elements such as tables, dropdowns...",
+            "themeable": "Yes",
+            "type": "color",
+            "value": "{color.gray.01-25}"
+          },
+          "off": {
+            "description": "Background color for off state of UI Elements such as toggle",
+            "themeable": "No",
+            "type": "color",
+            "value": "{color.action.disabled}"
+          },
+          "on": {
+            "description": "Background color for on state of UI Elements such as toggle",
+            "themeable": "No",
+            "type": "color",
+            "value": "{color.feedback.success}"
+          },
+          "on-dark": {
+            "active": {
+              "description": "Background color of secondary interactive color.",
+              "themeable": "No",
+              "type": "color",
+              "value": "{color.action.on-dark.active}"
+            },
+            "default": {
+              "description": "Background color of secondary interactive color",
+              "themeable": "No",
+              "type": "color",
+              "value": "{color.action.on-dark.default}"
+            },
+            "hover": {
+              "description": "Background color of secondary interactive color.",
+              "themeable": "No",
+              "type": "color",
+              "value": "{color.action.on-dark.hover}"
+            }
+          },
+          "primary": {
+            "active": {
+              "description": "Background color of primary interactive color e.g primary buttons.",
+              "themeable": "No",
+              "type": "color",
+              "value": "{color.action.primary.active}"
+            },
+            "default": {
+              "description": "Background color of primary interactive color e.g primary buttons.",
+              "themeable": "No",
+              "type": "color",
+              "value": "{color.action.primary.default}"
+            },
+            "hover": {
+              "description": "Background color of primary interactive color e.g primary buttons.",
+              "themeable": "No",
+              "type": "color",
+              "value": "{color.action.primary.hover}"
+            }
+          },
+          "secondary": {
+            "active": {
+              "description": "Background color of secondary interactive color  e.g. secondary button",
+              "themeable": "No",
+              "type": "color",
+              "value": "{color.background.default}"
+            },
+            "default": {
+              "description": "Background color of secondary interactive color e.g. secondary buttons",
+              "themeable": "No",
+              "type": "color",
+              "value": "{color.background.default}"
+            },
+            "hover": {
+              "description": "Background color of secondary interactive color e.g. secondary buttons",
+              "themeable": "No",
+              "type": "color",
+              "value": "{color.background.default}"
+            }
+          },
+          "selected": {
+            "description": "Background color for selected state of UI Elements such as tables, dropdowns...",
+            "themeable": "Yes",
+            "type": "color",
+            "value": "{color.gray.01-5}"
+          },
+          "selected-hover": {
+            "description": "Background color for hover state of on selected UI Elements",
+            "themeable": "Yes",
+            "type": "color",
+            "value": "{color.gray.02}"
+          }
+        },
+        "border": {
+          "disabled": {
+            "description": "Border color for disabled state of UI Elements such as tables, dropdowns...",
+            "themeable": "No",
+            "type": "color",
+            "value": "{color.action.disabled}"
+          },
+          "focus": {
+            "description": "Outline color for focus state.",
+            "themeable": "Yes",
+            "type": "color",
+            "value": "{color.action.primary.default}"
+          },
+          "on-dark": {
+            "active": {
+              "description": "Border color of secondary interactive color.",
+              "themeable": "No",
+              "type": "color",
+              "value": "{color.action.on-dark.active}"
+            },
+            "default": {
+              "description": "Border color of secondary interactive color",
+              "themeable": "No",
+              "type": "color",
+              "value": "{color.action.on-dark.default}"
+            },
+            "hover": {
+              "description": "Border color of secondary interactive color.",
+              "themeable": "No",
+              "type": "color",
+              "value": "{color.action.on-dark.hover}"
+            }
+          },
+          "primary": {
+            "active": {
+              "description": "Border color of primary interactive color e.g primary buttons.",
+              "themeable": "No",
+              "type": "color",
+              "value": "{color.action.primary.active}"
+            },
+            "default": {
+              "description": "Border color of primary interactive color e.g primary buttons.",
+              "themeable": "No",
+              "type": "color",
+              "value": "{color.action.primary.default}"
+            },
+            "hover": {
+              "description": "Border color of primary interactive color e.g primary buttons.",
+              "themeable": "No",
+              "type": "color",
+              "value": "{color.action.primary.hover}"
+            }
+          },
+          "secondary": {
+            "active": {
+              "description": "Border color of secondary interactive color  e.g. secondary button",
+              "themeable": "No",
+              "type": "color",
+              "value": "{color.action.secondary.active}"
+            },
+            "default": {
+              "description": "Border color of secondary interactive color e.g. secondary buttons",
+              "themeable": "No",
+              "type": "color",
+              "value": "{color.action.secondary.default}"
+            },
+            "hover": {
+              "description": "Border color of secondary interactive color e.g. secondary buttons",
+              "themeable": "No",
+              "type": "color",
+              "value": "{color.action.secondary.hover}"
+            }
+          },
+          "selected": {
+            "on-dark": {
+              "description": "Border color for selected items on dark background.",
+              "themeable": "No",
+              "type": "color",
+              "value": "{color.action.on-dark.default}"
+            },
+            "on-light": {
+              "description": "Border color for selected items.",
+              "themeable": "No",
+              "type": "color",
+              "value": "{color.action.primary.default}"
+            }
+          }
+        },
+        "disabled": {
+          "description": "Global color for disabled state.",
+          "themeable": "Yes",
+          "type": "color",
+          "value": "{color.gray.03}"
+        },
+        "on-dark": {
+          "active": {
+            "description": "Text color of secondary interactive color on dark background e.g. buttons.",
+            "themeable": "Yes",
+            "type": "color",
+            "value": "{color.gray.03}"
+          },
+          "default": {
+            "description": "Color of interactive color on dark background e.g. buttons",
+            "themeable": "Yes",
+            "type": "color",
+            "value": "#FFFFFF"
+          },
+          "hover": {
+            "description": "Text color of secondary interactive color on dark background e.g. buttons.",
+            "themeable": "Yes",
+            "type": "color",
+            "value": "{color.gray.02}"
+          }
+        },
+        "primary": {
+          "active": {
+            "description": "Color of primary interactive color on active  e.g. buttons",
+            "themeable": "Yes",
+            "type": "color",
+            "value": "{color.orange.07}"
+          },
+          "default": {
+            "description": "Color of primary interactive color e.g. buttons",
+            "themeable": "Yes",
+            "type": "color",
+            "value": "{color.brand.primary}"
+          },
+          "hover": {
+            "description": "Color of primary interactive color on hover  e.g. buttons",
+            "themeable": "Yes",
+            "type": "color",
+            "value": "{color.orange.05}"
+          }
+        },
+        "secondary": {
+          "active": {
+            "description": "Color of secondary interactive color  e.g. secondary button",
+            "themeable": "Yes",
+            "type": "color",
+            "value": "{color.action.primary.active}"
+          },
+          "default": {
+            "description": "Color of secondary interactive color e.g. secondary buttons",
+            "themeable": "Yes",
+            "type": "color",
+            "value": "{color.brand.secondary}"
+          },
+          "hover": {
+            "description": "Color of secondary interactive color e.g. secondary buttons",
+            "themeable": "Yes",
+            "type": "color",
+            "value": "{color.action.primary.hover}"
+          }
+        },
+        "text": {
+          "disabled": {
+            "description": "Text color for disabled state of UI Elements",
+            "themeable": "No",
+            "type": "color",
+            "value": "{color.action.disabled}"
+          },
+          "on-dark": {
+            "description": "Text color on top of interactive color on a dark background",
+            "themeable": "Yes",
+            "type": "color",
+            "value": "{color.gray.07}"
+          },
+          "on-dark-active": {
+            "description": "Text color of secondary interactive color e.g. secondary button on a dark background",
+            "themeable": "No",
+            "type": "color",
+            "value": "{color.action.on-dark.active}"
+          },
+          "on-dark-default": {
+            "description": "Text color of secondary interactive color e.g. secondary button on a dark background",
+            "themeable": "No",
+            "type": "color",
+            "value": "{color.action.on-dark.default}"
+          },
+          "on-dark-hover": {
+            "description": "Text color of secondary interactive color e.g. secondary button on a dark background",
+            "themeable": "No",
+            "type": "color",
+            "value": "{color.action.on-dark.hover}"
+          },
+          "on-disabled": {
+            "description": "Text color on top of disabled state color",
+            "themeable": "Yes",
+            "type": "color",
+            "value": "{color.text.default.on-dark}"
+          },
+          "on-hover": {
+            "description": "Text color on top of hover state of UI Elements",
+            "themeable": "Yes",
+            "type": "color",
+            "value": "{color.text.default.on-light}"
+          },
+          "on-primary": {
+            "description": "Text color on top of primary interactive color",
+            "themeable": "No",
+            "type": "color",
+            "value": "{color.brand.on-primary}"
+          },
+          "on-secondary": {
+            "description": "Text color on top of secondary interactive color",
+            "themeable": "No",
+            "type": "color",
+            "value": "{color.brand.on-secondary}"
+          },
+          "on-selected": {
+            "description": "Text color on top of selected state of UI Elements",
+            "themeable": "Yes",
+            "type": "color",
+            "value": "{color.action.primary.default}"
+          },
+          "on-selected-hover": {
+            "description": "Text color on top of hover and selected state of UI Elements",
+            "themeable": "Yes",
+            "type": "color",
+            "value": "{color.action.primary.default}"
+          },
+          "primary": {
+            "active": {
+              "description": "Text color of primary color pressed interactive state   e.g. ghost button",
+              "themeable": "No",
+              "type": "color",
+              "value": "{color.action.primary.active}"
+            },
+            "default": {
+              "description": "Text color of primary interactive color e.g. links",
+              "themeable": "No",
+              "type": "color",
+              "value": "{color.action.primary.default}"
+            },
+            "hover": {
+              "description": "Text color of primary color hover interactive state e.g. secondary buttons",
+              "themeable": "No",
+              "type": "color",
+              "value": "{color.action.primary.hover}"
+            }
+          },
+          "secondary": {
+            "active": {
+              "description": "Text color of secondary interactive color  e.g. secondary button",
+              "themeable": "No",
+              "type": "color",
+              "value": "{color.action.secondary.active}"
+            },
+            "default": {
+              "description": "Text color of secondary interactive color e.g. secondary buttons",
+              "themeable": "No",
+              "type": "color",
+              "value": "{color.action.secondary.default}"
+            },
+            "hover": {
+              "description": "Text color of secondary interactive color e.g. secondary buttons",
+              "themeable": "No",
+              "type": "color",
+              "value": "{color.action.secondary.hover}"
+            }
+          }
+        }
+      },
+      "background": {
+        "default": {
+          "description": "Main background color of the application.",
+          "themeable": "Yes",
+          "type": "color",
+          "value": "{color.white}"
+        },
+        "gray-lightest": {
+          "description": "Used on background of breadcrumb and pill components.",
+          "themeable": "Yes",
+          "type": "color",
+          "value": "{color.gray.01-5}"
+        },
+        "primary": {
+          "description": "Background of primary brand color.",
+          "themeable": "No",
+          "type": "color",
+          "value": "{color.brand.primary}"
+        }
+      },
+      "border": {
+        "default": {
+          "on-dark": {
+            "description": "Default Border color used for layout elements on a dark background.",
+            "themeable": "Yes",
+            "type": "color",
+            "value": "{color.gray.05}"
+          },
+          "on-light": {
+            "description": "Default Border color used for layout elements e.g. accordion, table.",
+            "themeable": "Yes",
+            "type": "color",
+            "value": "{color.gray.02}"
+          }
+        }
+      },
+      "brand": {
+        "on-primary": {
+          "description": "The text color on your primary brand color",
+          "themeable": "Yes",
+          "type": "color",
+          "value": "#FFFFFF"
+        },
+        "on-secondary": {
+          "description": "The text color on your secondary brand color",
+          "themeable": "Yes",
+          "type": "color",
+          "value": "#FFFFFF"
+        },
+        "primary": {
+          "description": "The primary color of your brand",
+          "themeable": "Yes",
+          "type": "color",
+          "value": "{color.orange.04}"
+        },
+        "secondary": {
+          "description": "The secondary color of your brand",
+          "themeable": "Yes",
+          "type": "color",
+          "value": "{color.orange.04}"
+        }
+      },
+      "feedback": {
+        "background": {
+          "error": {
+            "description": "Background color for error state",
+            "themeable": "No",
+            "type": "color",
+            "value": "{color.feedback.error}"
+          },
+          "information": {
+            "description": "Background color for neutral or optional state",
+            "themeable": "No",
+            "type": "color",
+            "value": "{color.feedback.information}"
+          },
+          "success": {
+            "description": "Background color for success or positive state",
+            "themeable": "No",
+            "type": "color",
+            "value": "{color.feedback.success}"
+          },
+          "warning": {
+            "description": "Background color for warning state",
+            "themeable": "No",
+            "type": "color",
+            "value": "{color.feedback.warning}"
+          }
+        },
+        "border": {
+          "error": {
+            "description": "Border color for error state",
+            "themeable": "No",
+            "type": "color",
+            "value": "{color.feedback.error}"
+          },
+          "information": {
+            "description": "Border color  for neutral or optional state",
+            "themeable": "No",
+            "type": "color",
+            "value": "{color.feedback.information}"
+          },
+          "success": {
+            "description": "Border color  for success or positive state",
+            "themeable": "No",
+            "type": "color",
+            "value": "{color.feedback.success}"
+          },
+          "warning": {
+            "description": "Border color or for warning state",
+            "themeable": "No",
+            "type": "color",
+            "value": "{color.feedback.warning}"
+          }
+        },
+        "error": {
+          "description": "Color for error state",
+          "themeable": "Yes",
+          "type": "color",
+          "value": "#EE0000"
+        },
+        "information": {
+          "description": "Color for neutral or optional state",
+          "themeable": "Yes",
+          "type": "color",
+          "value": "{color.yellow.04}"
+        },
+        "success": {
+          "description": "Color for success or positive state",
+          "themeable": "Yes",
+          "type": "color",
+          "value": "#038A00"
+        },
+        "text": {
+          "error": {
+            "description": "Text color for error state",
+            "themeable": "No",
+            "type": "color",
+            "value": "{color.feedback.error}"
+          },
+          "information": {
+            "description": "Text color for neutral or optional state",
+            "themeable": "No",
+            "type": "color",
+            "value": "{color.feedback.information}"
+          },
+          "on-error": {
+            "description": "Text color displayed on top of the error color",
+            "themeable": "No",
+            "type": "color",
+            "value": "{color.text.default.on-dark}"
+          },
+          "on-information": {
+            "description": "Text color displayed on top of the error color",
+            "themeable": "No",
+            "type": "color",
+            "value": "{color.text.default.on-dark}"
+          },
+          "on-success": {
+            "description": "Text color displayed on top of the error color",
+            "themeable": "No",
+            "type": "color",
+            "value": "{color.text.default.on-dark}"
+          },
+          "on-warning": {
+            "description": "Text color displayed on top of the warning color",
+            "themeable": "No",
+            "type": "color",
+            "value": "{color.text.default.on-dark}"
+          },
+          "success": {
+            "description": "Text color for success or positive state",
+            "themeable": "No",
+            "type": "color",
+            "value": "{color.feedback.success}"
+          },
+          "warning": {
+            "description": "Text color for warning state",
+            "themeable": "No",
+            "type": "color",
+            "value": "{color.feedback.warning}"
+          }
+        },
+        "warning": {
+          "description": "Color for warning state",
+          "themeable": "Yes",
+          "type": "color",
+          "value": "{color.gold.04}"
+        }
+      },
+      "text": {
+        "default": {
+          "on-dark": {
+            "description": "Color of body text on dark background.",
+            "themeable": "Yes",
+            "type": "color",
+            "value": "#FFFFFF"
+          },
+          "on-light": {
+            "description": "Color of body text on light background.",
+            "themeable": "Yes",
+            "type": "color",
+            "value": "{color.gray.07}"
+          }
+        },
+        "helper": {
+          "description": "Text color of helper text on forms, cards etc.",
+          "themeable": "Yes",
+          "type": "color",
+          "value": "{color.gray.05}"
+        },
+        "primary": {
+          "description": "Text color of primary brand color.",
+          "themeable": "No",
+          "type": "color",
+          "value": "{color.brand.primary}"
+        }
+      },
+      "visualization": {
+        "01": {
+          "description": "Data Visualization Color",
+          "themeable": "No",
+          "type": "color",
+          "value": "#0023CF"
+        },
+        "02": {
+          "description": "Data Visualization Color",
+          "themeable": "No",
+          "type": "color",
+          "value": "#AC00CF"
+        },
+        "03": {
+          "description": "Data Visualization Color",
+          "themeable": "No",
+          "type": "color",
+          "value": "#CF008A"
+        }
+      }
+    },
+    "connect": {
+      "color": {
+        "background": {
+          "api": {
+            "description": "Background color for items in API category.",
+            "themeable": "No",
+            "type": "color",
+            "value": "{color.yellow.04}"
+          },
+          "application": {
+            "description": "Background color for items in application category.",
+            "themeable": "No",
+            "type": "color",
+            "value": "{color.teal.04}"
+          },
+          "collection": {
+            "description": "Background color for items in collection category.",
+            "themeable": "No",
+            "type": "color",
+            "value": "{color.gray.07}"
+          },
+          "document": {
+            "description": "Background color for items in document category.",
+            "themeable": "No",
+            "type": "color",
+            "value": "{color.gray.03}"
+          },
+          "product": {
+            "description": "Background color for items in product category.",
+            "themeable": "No",
+            "type": "color",
+            "value": "#A82226"
+          },
+          "reference": {
+            "description": "Background color for items in reference category.",
+            "themeable": "No",
+            "type": "color",
+            "value": "{color.green.04}"
+          },
+          "report": {
+            "description": "Border color for items in report category.",
+            "themeable": "No",
+            "type": "color",
+            "value": "{color.gold.04}"
+          }
+        },
+        "border": {
+          "api": {
+            "description": "Border color for items in API category.",
+            "themeable": "No",
+            "type": "color",
+            "value": "{color.yellow.04}"
+          },
+          "application": {
+            "description": "Border color for items in application category.",
+            "themeable": "No",
+            "type": "color",
+            "value": "{color.teal.04}"
+          },
+          "collection": {
+            "description": "Border color for items in collection category.",
+            "themeable": "No",
+            "type": "color",
+            "value": "{color.gray.07}"
+          },
+          "document": {
+            "description": "Border color for items in document category.",
+            "themeable": "No",
+            "type": "color",
+            "value": "{color.gray.03}"
+          },
+          "product": {
+            "description": "Border color for items in product category.",
+            "themeable": "No",
+            "type": "color",
+            "value": "#A82226"
+          },
+          "reference": {
+            "description": "Border color for items in reference category.",
+            "themeable": "No",
+            "type": "color",
+            "value": "{color.green.04}"
+          },
+          "report": {
+            "description": "Border color for items in report category.",
+            "themeable": "No",
+            "type": "color",
+            "value": "{color.orange.05}"
+          }
+        }
+      }
+    },
+    "footer": {
+      "color": {
+        "background": {
+          "description": "Background color for footer component",
+          "themeable": "Yes",
+          "type": "color",
+          "value": "{color.gray.07}"
+        }
+      }
+    },
+    "forms": {
+      "color": {
+        "background": {
+          "default": {
+            "description": "Default background color for forms.",
+            "themeable": "Yes",
+            "type": "color",
+            "value": "{color.background.default}"
+          }
+        },
+        "border": {
+          "default": {
+            "description": "Default border color for forms.",
+            "themeable": "Yes",
+            "type": "color",
+            "value": "{color.gray.05}"
+          }
+        }
+      }
+    },
+    "grid": {
+      "gutters": {
+        "lg": {
+          "description": "Gutter size on large breakpoint.",
+          "themeable": "Yes",
+          "type": "spacing",
+          "value": "{space.4-x}"
+        },
+        "md": {
+          "description": "Gutter size on medium breakpoint.",
+          "themeable": "Yes",
+          "type": "spacing",
+          "value": "{space.4-x}"
+        },
+        "sm": {
+          "description": "Grid gutter size on small breakpoint.",
+          "themeable": "Yes",
+          "type": "spacing",
+          "value": "{space.2-x}"
+        }
+      },
+      "margin": {
+        "lg": {
+          "description": "Margin size on large breakpoint.",
+          "themeable": "Yes",
+          "type": "spacing",
+          "value": "{space.4-x}"
+        },
+        "md": {
+          "description": "Margin size on medium breakpoint.",
+          "themeable": "Yes",
+          "type": "spacing",
+          "value": "{space.4-x}"
+        },
+        "sm": {
+          "description": "Margin size on small breakpoint.",
+          "themeable": "Yes",
+          "type": "spacing",
+          "value": "{space.2-x}"
+        }
+      }
+    },
+    "header": {
+      "color": {
+        "background": {
+          "description": "Background color for header component",
+          "themeable": "Yes",
+          "type": "color",
+          "value": "{color.gray.07}"
+        }
+      }
+    },
+    "link": {
+      "color": {
+        "default": {
+          "description": "Text color for link",
+          "themeable": "Yes",
+          "type": "color",
+          "value": "{color.action.primary.default}"
+        }
+      }
+    },
+    "pill": {
+      "border-radius": {
+        "description": "Pill Border Radius",
+        "themeable": "Yes",
+        "type": "borderRadius",
+        "value": "{border.radius.05}"
+      }
+    },
+    "scrollbar": {
+      "color": {
+        "background": {
+          "description": "Background color for scrollbar component",
+          "themeable": "Yes",
+          "type": "color",
+          "value": "{color.gray.03}"
+        }
+      }
+    },
+    "shadow": {
+      "default": {
+        "description": "Shadow for all content cards, dropdowns, dialogs, datepicker etc.",
+        "themeable": "Yes",
+        "type": "boxShadow",
+        "value": "0 2px 10px 0 rgba(20,20,19,0.20)"
+      }
+    },
+    "b2b": {
+      "elevation": {
+        "range-slider - thumb": {
+          "value": {
+            "color": "#14141333",
+            "type": "dropShadow",
+            "x": "0",
+            "y": "5",
+            "blur": "10",
+            "spread": "0"
+          },
+          "type": "boxShadow",
+          "description": "Figma-only design token.",
+          "figmaOnly": true
+        },
+        "toggle-switch - head": {
+          "value": [
+            {
+              "color": "#1414134d",
+              "type": "dropShadow",
+              "x": "0",
+              "y": "2",
+              "blur": "2",
+              "spread": "0"
+            },
+            {
+              "color": "#14141326",
+              "type": "dropShadow",
+              "x": "0",
+              "y": "5",
+              "blur": "10",
+              "spread": "0"
+            }
+          ],
+          "type": "boxShadow",
+          "description": "Figma-only design token.",
+          "figmaOnly": true
+        },
+        "content-card": {
+          "default": {
+            "value": {
+              "color": "#14141333",
+              "type": "dropShadow",
+              "x": "0",
+              "y": "2",
+              "blur": "10",
+              "spread": "0"
+            },
+            "type": "boxShadow",
+            "description": "Figma-only design token.",
+            "figmaOnly": true
+          },
+          "my-items-card": {
+            "default": {
+              "value": {
+                "color": "#14141333",
+                "type": "dropShadow",
+                "x": "0",
+                "y": "2",
+                "blur": "4",
+                "spread": "0"
+              },
+              "type": "boxShadow",
+              "description": "Figma-only design token.",
+              "figmaOnly": true
+            },
+            "hover": {
+              "value": {
+                "color": "#14141333",
+                "type": "dropShadow",
+                "x": "0",
+                "y": "2",
+                "blur": "10",
+                "spread": "0"
+              },
+              "type": "boxShadow",
+              "description": "Figma-only design token.",
+              "figmaOnly": true
+            }
+          }
+        }
+      }
+    },
+    "made": {
+      "shadow": {
+        "default": {
+          "value": {
+            "color": "#14141333",
+            "type": "dropShadow",
+            "x": "0",
+            "y": "2",
+            "blur": "10",
+            "spread": "0"
+          },
+          "type": "boxShadow",
+          "description": "Figma-only design token.",
+          "figmaOnly": true
+        },
+        "toggle": {
+          "value": [
+            {
+              "color": "#1414134d",
+              "type": "dropShadow",
+              "x": "0",
+              "y": "2",
+              "blur": "2",
+              "spread": "0"
+            },
+            {
+              "color": "#14141326",
+              "type": "dropShadow",
+              "x": "0",
+              "y": "5",
+              "blur": "10",
+              "spread": "0"
+            }
+          ],
+          "type": "boxShadow",
+          "description": "Figma-only design token.",
+          "figmaOnly": true
+        }
       }
     },
     "fontFamilies": {
-      "heading": {
-        "value": "Inter",
-        "type": "fontFamilies"
+      "mark-offc-for-mc": {
+        "value": "Mark Offc For MC",
+        "type": "fontFamilies",
+        "description": "Figma-only design token.",
+        "figmaOnly": true
       },
-      "body": {
-        "value": "Roboto",
-        "type": "fontFamilies"
+      "markformcnrw": {
+        "value": "MarkForMCNrw",
+        "type": "fontFamilies",
+        "description": "Figma-only design token.",
+        "figmaOnly": true
       }
     },
     "lineHeights": {
-      "heading": {
-        "value": "110%",
-        "type": "lineHeights"
+      "0": {
+        "value": "40",
+        "type": "lineHeights",
+        "description": "Figma-only design token.",
+        "figmaOnly": true
       },
-      "body": {
-        "value": "140%",
-        "type": "lineHeights"
-      }
-    },
-    "letterSpacing": {
-      "default": {
-        "value": "0",
-        "type": "letterSpacing"
+      "1": {
+        "value": "35",
+        "type": "lineHeights",
+        "description": "Figma-only design token.",
+        "figmaOnly": true
       },
-      "increased": {
-        "value": "150%",
-        "type": "letterSpacing"
+      "2": {
+        "value": "30",
+        "type": "lineHeights",
+        "description": "Figma-only design token.",
+        "figmaOnly": true
       },
-      "decreased": {
-        "value": "-5%",
-        "type": "letterSpacing"
-      }
-    },
-    "paragraphSpacing": {
-      "h1": {
-        "value": "32",
-        "type": "paragraphSpacing"
+      "3": {
+        "value": "25",
+        "type": "lineHeights",
+        "description": "Figma-only design token.",
+        "figmaOnly": true
       },
-      "h2": {
-        "value": "26",
-        "type": "paragraphSpacing"
+      "4": {
+        "value": "22.5",
+        "type": "lineHeights",
+        "description": "Figma-only design token.",
+        "figmaOnly": true
+      },
+      "5": {
+        "value": "20",
+        "type": "lineHeights",
+        "description": "Figma-only design token.",
+        "figmaOnly": true
+      },
+      "6": {
+        "value": "100",
+        "type": "lineHeights",
+        "description": "Figma-only design token.",
+        "figmaOnly": true
+      },
+      "7": {
+        "value": "75",
+        "type": "lineHeights",
+        "description": "Figma-only design token.",
+        "figmaOnly": true
+      },
+      "8": {
+        "value": "60",
+        "type": "lineHeights",
+        "description": "Figma-only design token.",
+        "figmaOnly": true
+      },
+      "9": {
+        "value": "18",
+        "type": "lineHeights",
+        "description": "Figma-only design token.",
+        "figmaOnly": true
+      },
+      "10": {
+        "value": "24",
+        "type": "lineHeights",
+        "description": "Figma-only design token.",
+        "figmaOnly": true
+      },
+      "11": {
+        "value": "21",
+        "type": "lineHeights",
+        "description": "Figma-only design token.",
+        "figmaOnly": true
+      },
+      "12": {
+        "value": "12",
+        "type": "lineHeights",
+        "description": "Figma-only design token.",
+        "figmaOnly": true
+      },
+      "13": {
+        "value": "14",
+        "type": "lineHeights",
+        "description": "Figma-only design token.",
+        "figmaOnly": true
+      },
+      "14": {
+        "value": "13",
+        "type": "lineHeights",
+        "description": "Figma-only design token.",
+        "figmaOnly": true
+      },
+      "15": {
+        "value": "15",
+        "type": "lineHeights",
+        "description": "Figma-only design token.",
+        "figmaOnly": true
+      },
+      "16": {
+        "value": "16",
+        "type": "lineHeights",
+        "description": "Figma-only design token.",
+        "figmaOnly": true
+      },
+      "17": {
+        "value": "9",
+        "type": "lineHeights",
+        "description": "Figma-only design token.",
+        "figmaOnly": true
+      },
+      "18": {
+        "value": "AUTO",
+        "type": "lineHeights",
+        "description": "Figma-only design token.",
+        "figmaOnly": true
       }
     },
     "fontWeights": {
-      "headingRegular": {
+      "mark-offc-for-mc-0": {
+        "value": "Light",
+        "type": "fontWeights",
+        "description": "Figma-only design token.",
+        "figmaOnly": true
+      },
+      "mark-offc-for-mc-1": {
         "value": "Regular",
-        "type": "fontWeights"
+        "type": "fontWeights",
+        "description": "Figma-only design token.",
+        "figmaOnly": true
       },
-      "headingBold": {
+      "mark-offc-for-mc-2": {
+        "value": "Medium",
+        "type": "fontWeights",
+        "description": "Figma-only design token.",
+        "figmaOnly": true
+      },
+      "mark-offc-for-mc-3": {
         "value": "Bold",
-        "type": "fontWeights"
+        "type": "fontWeights",
+        "description": "Figma-only design token.",
+        "figmaOnly": true
       },
-      "bodyRegular": {
+      "markformcnrw-4": {
         "value": "Regular",
-        "type": "fontWeights"
+        "type": "fontWeights",
+        "description": "Figma-only design token.",
+        "figmaOnly": true
       },
-      "bodyBold": {
+      "markformcnrw-5": {
+        "value": "Medium",
+        "type": "fontWeights",
+        "description": "Figma-only design token.",
+        "figmaOnly": true
+      },
+      "markformcnrw-6": {
         "value": "Bold",
-        "type": "fontWeights"
+        "type": "fontWeights",
+        "description": "Figma-only design token.",
+        "figmaOnly": true
       }
     },
-    "fontSizes": {
+    "fontSize": {
+      "0": {
+        "value": "9",
+        "type": "fontSizes",
+        "description": "Figma-only design token.",
+        "figmaOnly": true
+      },
+      "1": {
+        "value": "12",
+        "type": "fontSizes",
+        "description": "Figma-only design token.",
+        "figmaOnly": true
+      },
+      "2": {
+        "value": "13",
+        "type": "fontSizes",
+        "description": "Figma-only design token.",
+        "figmaOnly": true
+      },
+      "3": {
+        "value": "14",
+        "type": "fontSizes",
+        "description": "Figma-only design token.",
+        "figmaOnly": true
+      },
+      "4": {
+        "value": "15",
+        "type": "fontSizes",
+        "description": "Figma-only design token.",
+        "figmaOnly": true
+      },
+      "5": {
+        "value": "16",
+        "type": "fontSizes",
+        "description": "Figma-only design token.",
+        "figmaOnly": true
+      },
+      "6": {
+        "value": "18",
+        "type": "fontSizes",
+        "description": "Figma-only design token.",
+        "figmaOnly": true
+      },
+      "7": {
+        "value": "20",
+        "type": "fontSizes",
+        "description": "Figma-only design token.",
+        "figmaOnly": true
+      },
+      "8": {
+        "value": "24",
+        "type": "fontSizes",
+        "description": "Figma-only design token.",
+        "figmaOnly": true
+      },
+      "9": {
+        "value": "28",
+        "type": "fontSizes",
+        "description": "Figma-only design token.",
+        "figmaOnly": true
+      },
+      "10": {
+        "value": "32",
+        "type": "fontSizes",
+        "description": "Figma-only design token.",
+        "figmaOnly": true
+      },
+      "11": {
+        "value": "48",
+        "type": "fontSizes",
+        "description": "Figma-only design token.",
+        "figmaOnly": true
+      },
+      "12": {
+        "value": "60",
+        "type": "fontSizes",
+        "description": "Figma-only design token.",
+        "figmaOnly": true
+      },
+      "13": {
+        "value": "80",
+        "type": "fontSizes",
+        "description": "Figma-only design token.",
+        "figmaOnly": true
+      }
+    },
+    "letterSpacing": {
+      "0": {
+        "value": "0",
+        "type": "letterSpacing",
+        "description": "Figma-only design token.",
+        "figmaOnly": true
+      },
+      "1": {
+        "value": "1.8",
+        "type": "letterSpacing",
+        "description": "Figma-only design token.",
+        "figmaOnly": true
+      }
+    },
+    "paragraphSpacing": {
+      "0": {
+        "value": "0",
+        "type": "paragraphSpacing",
+        "description": "Figma-only design token.",
+        "figmaOnly": true
+      },
+      "1": {
+        "value": "18",
+        "type": "paragraphSpacing",
+        "description": "Figma-only design token.",
+        "figmaOnly": true
+      },
+      "2": {
+        "value": "20",
+        "type": "paragraphSpacing",
+        "description": "Figma-only design token.",
+        "figmaOnly": true
+      },
+      "3": {
+        "value": "24",
+        "type": "paragraphSpacing",
+        "description": "Figma-only design token.",
+        "figmaOnly": true
+      }
+    },
+    "heading": {
       "h1": {
-        "value": "{fontSizes.h2} * 1.25",
-        "type": "fontSizes"
+        "value": {
+          "fontFamily": "{fontFamilies.mark-offc-for-mc}",
+          "fontWeight": "{fontWeights.mark-offc-for-mc-0}",
+          "lineHeight": "{lineHeights.0}",
+          "fontSize": "{fontSize.10}",
+          "letterSpacing": "{letterSpacing.0}",
+          "paragraphSpacing": "{paragraphSpacing.0}",
+          "paragraphIndent": "{paragraphIndent.0}",
+          "textCase": "{textCase.none}",
+          "textDecoration": "{textDecoration.none}"
+        },
+        "type": "typography",
+        "description": "Figma-only design token.",
+        "figmaOnly": true
       },
       "h2": {
-        "value": "{fontSizes.h3} * 1.25",
-        "type": "fontSizes"
+        "value": {
+          "fontFamily": "{fontFamilies.mark-offc-for-mc}",
+          "fontWeight": "{fontWeights.mark-offc-for-mc-0}",
+          "lineHeight": "{lineHeights.1}",
+          "fontSize": "{fontSize.9}",
+          "letterSpacing": "{letterSpacing.0}",
+          "paragraphSpacing": "{paragraphSpacing.0}",
+          "paragraphIndent": "{paragraphIndent.0}",
+          "textCase": "{textCase.none}",
+          "textDecoration": "{textDecoration.none}"
+        },
+        "type": "typography",
+        "description": "Figma-only design token.",
+        "figmaOnly": true
       },
       "h3": {
-        "value": "{fontSizes.h4} * 1.25",
-        "type": "fontSizes"
+        "value": {
+          "fontFamily": "{fontFamilies.mark-offc-for-mc}",
+          "fontWeight": "{fontWeights.mark-offc-for-mc-1}",
+          "lineHeight": "{lineHeights.2}",
+          "fontSize": "{fontSize.8}",
+          "letterSpacing": "{letterSpacing.0}",
+          "paragraphSpacing": "{paragraphSpacing.0}",
+          "paragraphIndent": "{paragraphIndent.0}",
+          "textCase": "{textCase.none}",
+          "textDecoration": "{textDecoration.none}"
+        },
+        "type": "typography",
+        "description": "Figma-only design token.",
+        "figmaOnly": true
       },
       "h4": {
-        "value": "{fontSizes.h5} * 1.25",
-        "type": "fontSizes"
+        "value": {
+          "fontFamily": "{fontFamilies.mark-offc-for-mc}",
+          "fontWeight": "{fontWeights.mark-offc-for-mc-1}",
+          "lineHeight": "{lineHeights.3}",
+          "fontSize": "{fontSize.7}",
+          "letterSpacing": "{letterSpacing.0}",
+          "paragraphSpacing": "{paragraphSpacing.0}",
+          "paragraphIndent": "{paragraphIndent.0}",
+          "textCase": "{textCase.none}",
+          "textDecoration": "{textDecoration.none}"
+        },
+        "type": "typography",
+        "description": "Figma-only design token.",
+        "figmaOnly": true
       },
       "h5": {
-        "value": "{fontSizes.h6} * 1.25",
-        "type": "fontSizes"
+        "value": {
+          "fontFamily": "{fontFamilies.mark-offc-for-mc}",
+          "fontWeight": "{fontWeights.mark-offc-for-mc-1}",
+          "lineHeight": "{lineHeights.4}",
+          "fontSize": "{fontSize.6}",
+          "letterSpacing": "{letterSpacing.0}",
+          "paragraphSpacing": "{paragraphSpacing.0}",
+          "paragraphIndent": "{paragraphIndent.0}",
+          "textCase": "{textCase.none}",
+          "textDecoration": "{textDecoration.none}"
+        },
+        "type": "typography",
+        "description": "Figma-only design token.",
+        "figmaOnly": true
       },
       "h6": {
-        "value": "{fontSizes.body} * 1",
-        "type": "fontSizes"
+        "value": {
+          "fontFamily": "{fontFamilies.mark-offc-for-mc}",
+          "fontWeight": "{fontWeights.mark-offc-for-mc-2}",
+          "lineHeight": "{lineHeights.5}",
+          "fontSize": "{fontSize.5}",
+          "letterSpacing": "{letterSpacing.0}",
+          "paragraphSpacing": "{paragraphSpacing.0}",
+          "paragraphIndent": "{paragraphIndent.0}",
+          "textCase": "{textCase.none}",
+          "textDecoration": "{textDecoration.none}"
+        },
+        "type": "typography",
+        "description": "Figma-only design token.",
+        "figmaOnly": true
       },
-      "body": {
-        "value": "16",
-        "type": "fontSizes"
+      "display": {
+        "h1": {
+          "value": {
+            "fontFamily": "{fontFamilies.mark-offc-for-mc}",
+            "fontWeight": "{fontWeights.mark-offc-for-mc-0}",
+            "lineHeight": "{lineHeights.6}",
+            "fontSize": "{fontSize.13}",
+            "letterSpacing": "{letterSpacing.0}",
+            "paragraphSpacing": "{paragraphSpacing.0}",
+            "paragraphIndent": "{paragraphIndent.0}",
+            "textCase": "{textCase.none}",
+            "textDecoration": "{textDecoration.none}"
+          },
+          "type": "typography",
+          "description": "Figma-only design token.",
+          "figmaOnly": true
+        },
+        "h2": {
+          "value": {
+            "fontFamily": "{fontFamilies.mark-offc-for-mc}",
+            "fontWeight": "{fontWeights.mark-offc-for-mc-0}",
+            "lineHeight": "{lineHeights.7}",
+            "fontSize": "{fontSize.12}",
+            "letterSpacing": "{letterSpacing.0}",
+            "paragraphSpacing": "{paragraphSpacing.0}",
+            "paragraphIndent": "{paragraphIndent.0}",
+            "textCase": "{textCase.none}",
+            "textDecoration": "{textDecoration.none}"
+          },
+          "type": "typography",
+          "description": "Figma-only design token.",
+          "figmaOnly": true
+        },
+        "h3": {
+          "value": {
+            "fontFamily": "{fontFamilies.mark-offc-for-mc}",
+            "fontWeight": "{fontWeights.mark-offc-for-mc-0}",
+            "lineHeight": "{lineHeights.8}",
+            "fontSize": "{fontSize.11}",
+            "letterSpacing": "{letterSpacing.0}",
+            "paragraphSpacing": "{paragraphSpacing.0}",
+            "paragraphIndent": "{paragraphIndent.0}",
+            "textCase": "{textCase.none}",
+            "textDecoration": "{textDecoration.none}"
+          },
+          "type": "typography",
+          "description": "Figma-only design token.",
+          "figmaOnly": true
+        }
+      }
+    },
+    "eb": {
+      "size - sm": {
+        "value": {
+          "fontFamily": "{fontFamilies.mark-offc-for-mc}",
+          "fontWeight": "{fontWeights.mark-offc-for-mc-3}",
+          "lineHeight": "{lineHeights.9}",
+          "fontSize": "{fontSize.1}",
+          "letterSpacing": "{letterSpacing.1}",
+          "paragraphSpacing": "{paragraphSpacing.0}",
+          "paragraphIndent": "{paragraphIndent.0}",
+          "textCase": "{textCase.uppercase}",
+          "textDecoration": "{textDecoration.none}"
+        },
+        "type": "typography",
+        "figmaOnly": true
       },
-      "sm": {
-        "value": "{fontSizes.body} * 0.85",
-        "type": "fontSizes"
+      "size - lg": {
+        "value": {
+          "fontFamily": "{fontFamilies.mark-offc-for-mc}",
+          "fontWeight": "{fontWeights.mark-offc-for-mc-3}",
+          "lineHeight": "{lineHeights.10}",
+          "fontSize": "{fontSize.5}",
+          "letterSpacing": "{letterSpacing.1}",
+          "paragraphSpacing": "{paragraphSpacing.0}",
+          "paragraphIndent": "{paragraphIndent.0}",
+          "textCase": "{textCase.uppercase}",
+          "textDecoration": "{textDecoration.none}"
+        },
+        "type": "typography",
+        "description": "Figma-only design token.",
+        "figmaOnly": true
+      }
+    },
+    "body": {
+      "size - md": {
+        "weight - regular": {
+          "value": {
+            "fontFamily": "{fontFamilies.mark-offc-for-mc}",
+            "fontWeight": "{fontWeights.mark-offc-for-mc-1}",
+            "lineHeight": "{lineHeights.11}",
+            "fontSize": "{fontSize.3}",
+            "letterSpacing": "{letterSpacing.0}",
+            "paragraphSpacing": "{paragraphSpacing.2}",
+            "paragraphIndent": "{paragraphIndent.0}",
+            "textCase": "{textCase.none}",
+            "textDecoration": "{textDecoration.none}"
+          },
+          "type": "typography",
+          "description": "Figma-only design token.",
+          "figmaOnly": true
+        },
+        "weight - medium": {
+          "value": {
+            "fontFamily": "{fontFamilies.mark-offc-for-mc}",
+            "fontWeight": "{fontWeights.mark-offc-for-mc-2}",
+            "lineHeight": "{lineHeights.11}",
+            "fontSize": "{fontSize.3}",
+            "letterSpacing": "{letterSpacing.0}",
+            "paragraphSpacing": "{paragraphSpacing.2}",
+            "paragraphIndent": "{paragraphIndent.0}",
+            "textCase": "{textCase.none}",
+            "textDecoration": "{textDecoration.none}"
+          },
+          "type": "typography",
+          "description": "Figma-only design token.",
+          "figmaOnly": true
+        }
       },
-      "xs": {
-        "value": "{fontSizes.body} * 0.65",
-        "type": "fontSizes"
+      "size - lg": {
+        "weight - regular": {
+          "value": {
+            "fontFamily": "{fontFamilies.mark-offc-for-mc}",
+            "fontWeight": "{fontWeights.mark-offc-for-mc-1}",
+            "lineHeight": "{lineHeights.10}",
+            "fontSize": "{fontSize.5}",
+            "letterSpacing": "{letterSpacing.0}",
+            "paragraphSpacing": "{paragraphSpacing.3}",
+            "paragraphIndent": "{paragraphIndent.0}",
+            "textCase": "{textCase.none}",
+            "textDecoration": "{textDecoration.none}"
+          },
+          "type": "typography",
+          "description": "Figma-only design token.",
+          "figmaOnly": true
+        },
+        "weight - medium": {
+          "value": {
+            "fontFamily": "{fontFamilies.mark-offc-for-mc}",
+            "fontWeight": "{fontWeights.mark-offc-for-mc-2}",
+            "lineHeight": "{lineHeights.10}",
+            "fontSize": "{fontSize.5}",
+            "letterSpacing": "{letterSpacing.0}",
+            "paragraphSpacing": "{paragraphSpacing.3}",
+            "paragraphIndent": "{paragraphIndent.0}",
+            "textCase": "{textCase.none}",
+            "textDecoration": "{textDecoration.none}"
+          },
+          "type": "typography",
+          "description": "Figma-only design token.",
+          "figmaOnly": true
+        }
+      }
+    },
+    "link_": {
+      "size - sm": {
+        "value": {
+          "fontFamily": "{fontFamilies.mark-offc-for-mc}",
+          "fontWeight": "{fontWeights.mark-offc-for-mc-2}",
+          "lineHeight": "{lineHeights.11}",
+          "fontSize": "{fontSize.3}",
+          "letterSpacing": "{letterSpacing.0}",
+          "paragraphSpacing": "{paragraphSpacing.1}",
+          "paragraphIndent": "{paragraphIndent.0}",
+          "textCase": "{textCase.none}",
+          "textDecoration": "{textDecoration.none}"
+        },
+        "type": "typography",
+        "description": "Figma-only design token.",
+        "figmaOnly": true
+      },
+      "size - md": {
+        "value": {
+          "fontFamily": "{fontFamilies.mark-offc-for-mc}",
+          "fontWeight": "{fontWeights.mark-offc-for-mc-2}",
+          "lineHeight": "{lineHeights.10}",
+          "fontSize": "{fontSize.5}",
+          "letterSpacing": "{letterSpacing.0}",
+          "paragraphSpacing": "{paragraphSpacing.0}",
+          "paragraphIndent": "{paragraphIndent.0}",
+          "textCase": "{textCase.none}",
+          "textDecoration": "{textDecoration.none}"
+        },
+        "type": "typography",
+        "description": "Figma-only design token.",
+        "figmaOnly": true
+      },
+      "size - sm - :hover": {
+        "value": {
+          "fontFamily": "{fontFamilies.mark-offc-for-mc}",
+          "fontWeight": "{fontWeights.mark-offc-for-mc-2}",
+          "lineHeight": "{lineHeights.11}",
+          "fontSize": "{fontSize.3}",
+          "letterSpacing": "{letterSpacing.0}",
+          "paragraphSpacing": "{paragraphSpacing.1}",
+          "paragraphIndent": "{paragraphIndent.0}",
+          "textCase": "{textCase.none}",
+          "textDecoration": "{textDecoration.underline}"
+        },
+        "type": "typography",
+        "description": "Figma-only design token.",
+        "figmaOnly": true
+      }
+    },
+    "components": {
+      "12px": {
+        "bold": {
+          "single-line": {
+            "value": {
+              "fontFamily": "{fontFamilies.mark-offc-for-mc}",
+              "fontWeight": "{fontWeights.mark-offc-for-mc-3}",
+              "lineHeight": "{lineHeights.12}",
+              "fontSize": "{fontSize.1}",
+              "letterSpacing": "{letterSpacing.0}",
+              "paragraphSpacing": "{paragraphSpacing.0}",
+              "paragraphIndent": "{paragraphIndent.0}",
+              "textCase": "{textCase.none}",
+              "textDecoration": "{textDecoration.none}"
+            },
+            "type": "typography",
+            "description": "Figma-only design token.",
+            "figmaOnly": true
+          }
+        },
+        "medium": {
+          "single-line": {
+            "value": {
+              "fontFamily": "{fontFamilies.mark-offc-for-mc}",
+              "fontWeight": "{fontWeights.mark-offc-for-mc-2}",
+              "lineHeight": "{lineHeights.12}",
+              "fontSize": "{fontSize.1}",
+              "letterSpacing": "{letterSpacing.0}",
+              "paragraphSpacing": "{paragraphSpacing.0}",
+              "paragraphIndent": "{paragraphIndent.0}",
+              "textCase": "{textCase.none}",
+              "textDecoration": "{textDecoration.none}"
+            },
+            "type": "typography",
+            "description": "Figma-only design token.",
+            "figmaOnly": true
+          },
+          "multi-line": {
+            "value": {
+              "fontFamily": "{fontFamilies.mark-offc-for-mc}",
+              "fontWeight": "{fontWeights.mark-offc-for-mc-2}",
+              "lineHeight": "{lineHeights.9}",
+              "fontSize": "{fontSize.1}",
+              "letterSpacing": "{letterSpacing.0}",
+              "paragraphSpacing": "{paragraphSpacing.3}",
+              "paragraphIndent": "{paragraphIndent.0}",
+              "textCase": "{textCase.none}",
+              "textDecoration": "{textDecoration.none}"
+            },
+            "type": "typography",
+            "description": "Figma-only design token.",
+            "figmaOnly": true
+          }
+        },
+        "narrow": {
+          "single-line": {
+            "value": {
+              "fontFamily": "{fontFamilies.markformcnrw}",
+              "fontWeight": "{fontWeights.markformcnrw-4}",
+              "lineHeight": "{lineHeights.12}",
+              "fontSize": "{fontSize.1}",
+              "letterSpacing": "{letterSpacing.0}",
+              "paragraphSpacing": "{paragraphSpacing.0}",
+              "paragraphIndent": "{paragraphIndent.0}",
+              "textCase": "{textCase.none}",
+              "textDecoration": "{textDecoration.none}"
+            },
+            "type": "typography",
+            "description": "Figma-only design token.",
+            "figmaOnly": true
+          }
+        },
+        "regular": {
+          "multi-line - compact": {
+            "value": {
+              "fontFamily": "{fontFamilies.mark-offc-for-mc}",
+              "fontWeight": "{fontWeights.mark-offc-for-mc-1}",
+              "lineHeight": "{lineHeights.13}",
+              "fontSize": "{fontSize.1}",
+              "letterSpacing": "{letterSpacing.0}",
+              "paragraphSpacing": "{paragraphSpacing.3}",
+              "paragraphIndent": "{paragraphIndent.0}",
+              "textCase": "{textCase.none}",
+              "textDecoration": "{textDecoration.none}"
+            },
+            "type": "typography",
+            "description": "Figma-only design token.",
+            "figmaOnly": true
+          },
+          "multi-line": {
+            "value": {
+              "fontFamily": "{fontFamilies.mark-offc-for-mc}",
+              "fontWeight": "{fontWeights.mark-offc-for-mc-1}",
+              "lineHeight": "{lineHeights.9}",
+              "fontSize": "{fontSize.1}",
+              "letterSpacing": "{letterSpacing.0}",
+              "paragraphSpacing": "{paragraphSpacing.0}",
+              "paragraphIndent": "{paragraphIndent.0}",
+              "textCase": "{textCase.none}",
+              "textDecoration": "{textDecoration.none}"
+            },
+            "type": "typography",
+            "description": "Figma-only design token.",
+            "figmaOnly": true
+          },
+          "single-line": {
+            "value": {
+              "fontFamily": "{fontFamilies.mark-offc-for-mc}",
+              "fontWeight": "{fontWeights.mark-offc-for-mc-1}",
+              "lineHeight": "{lineHeights.12}",
+              "fontSize": "{fontSize.1}",
+              "letterSpacing": "{letterSpacing.0}",
+              "paragraphSpacing": "{paragraphSpacing.0}",
+              "paragraphIndent": "{paragraphIndent.0}",
+              "textCase": "{textCase.none}",
+              "textDecoration": "{textDecoration.none}"
+            },
+            "type": "typography",
+            "description": "Figma-only design token.",
+            "figmaOnly": true
+          }
+        }
+      },
+      "13px": {
+        "regular": {
+          "value": {
+            "fontFamily": "{fontFamilies.mark-offc-for-mc}",
+            "fontWeight": "{fontWeights.mark-offc-for-mc-1}",
+            "lineHeight": "{lineHeights.14}",
+            "fontSize": "{fontSize.2}",
+            "letterSpacing": "{letterSpacing.0}",
+            "paragraphSpacing": "{paragraphSpacing.0}",
+            "paragraphIndent": "{paragraphIndent.0}",
+            "textCase": "{textCase.none}",
+            "textDecoration": "{textDecoration.none}"
+          },
+          "type": "typography",
+          "description": "Figma-only design token.",
+          "figmaOnly": true
+        }
+      },
+      "14px": {
+        "bold": {
+          "single-line": {
+            "value": {
+              "fontFamily": "{fontFamilies.mark-offc-for-mc}",
+              "fontWeight": "{fontWeights.mark-offc-for-mc-3}",
+              "lineHeight": "{lineHeights.13}",
+              "fontSize": "{fontSize.3}",
+              "letterSpacing": "{letterSpacing.0}",
+              "paragraphSpacing": "{paragraphSpacing.0}",
+              "paragraphIndent": "{paragraphIndent.0}",
+              "textCase": "{textCase.none}",
+              "textDecoration": "{textDecoration.none}"
+            },
+            "type": "typography",
+            "description": "Figma-only design token.",
+            "figmaOnly": true
+          }
+        },
+        "medium": {
+          "single-line": {
+            "value": {
+              "fontFamily": "{fontFamilies.mark-offc-for-mc}",
+              "fontWeight": "{fontWeights.mark-offc-for-mc-2}",
+              "lineHeight": "{lineHeights.13}",
+              "fontSize": "{fontSize.3}",
+              "letterSpacing": "{letterSpacing.0}",
+              "paragraphSpacing": "{paragraphSpacing.0}",
+              "paragraphIndent": "{paragraphIndent.0}",
+              "textCase": "{textCase.none}",
+              "textDecoration": "{textDecoration.none}"
+            },
+            "type": "typography",
+            "description": "Figma-only design token.",
+            "figmaOnly": true
+          },
+          "single-line - underline": {
+            "value": {
+              "fontFamily": "{fontFamilies.mark-offc-for-mc}",
+              "fontWeight": "{fontWeights.mark-offc-for-mc-2}",
+              "lineHeight": "{lineHeights.13}",
+              "fontSize": "{fontSize.3}",
+              "letterSpacing": "{letterSpacing.0}",
+              "paragraphSpacing": "{paragraphSpacing.0}",
+              "paragraphIndent": "{paragraphIndent.0}",
+              "textCase": "{textCase.none}",
+              "textDecoration": "{textDecoration.underline}"
+            },
+            "type": "typography",
+            "description": "Figma-only design token.",
+            "figmaOnly": true
+          },
+          "multi-line": {
+            "value": {
+              "fontFamily": "{fontFamilies.mark-offc-for-mc}",
+              "fontWeight": "{fontWeights.mark-offc-for-mc-2}",
+              "lineHeight": "{lineHeights.11}",
+              "fontSize": "{fontSize.3}",
+              "letterSpacing": "{letterSpacing.0}",
+              "paragraphSpacing": "{paragraphSpacing.2}",
+              "paragraphIndent": "{paragraphIndent.0}",
+              "textCase": "{textCase.none}",
+              "textDecoration": "{textDecoration.none}"
+            },
+            "type": "typography",
+            "description": "Figma-only design token.",
+            "figmaOnly": true
+          }
+        },
+        "narrow": {
+          "single-line - regular": {
+            "value": {
+              "fontFamily": "{fontFamilies.markformcnrw}",
+              "fontWeight": "{fontWeights.markformcnrw-4}",
+              "lineHeight": "{lineHeights.13}",
+              "fontSize": "{fontSize.3}",
+              "letterSpacing": "{letterSpacing.0}",
+              "paragraphSpacing": "{paragraphSpacing.0}",
+              "paragraphIndent": "{paragraphIndent.0}",
+              "textCase": "{textCase.none}",
+              "textDecoration": "{textDecoration.none}"
+            },
+            "type": "typography",
+            "description": "Figma-only design token.",
+            "figmaOnly": true
+          },
+          "single-line - medium": {
+            "value": {
+              "fontFamily": "{fontFamilies.markformcnrw}",
+              "fontWeight": "{fontWeights.markformcnrw-5}",
+              "lineHeight": "{lineHeights.13}",
+              "fontSize": "{fontSize.3}",
+              "letterSpacing": "{letterSpacing.0}",
+              "paragraphSpacing": "{paragraphSpacing.0}",
+              "paragraphIndent": "{paragraphIndent.0}",
+              "textCase": "{textCase.none}",
+              "textDecoration": "{textDecoration.none}"
+            },
+            "type": "typography",
+            "description": "Figma-only design token.",
+            "figmaOnly": true
+          },
+          "single-line - bold": {
+            "value": {
+              "fontFamily": "{fontFamilies.markformcnrw}",
+              "fontWeight": "{fontWeights.markformcnrw-6}",
+              "lineHeight": "{lineHeights.13}",
+              "fontSize": "{fontSize.3}",
+              "letterSpacing": "{letterSpacing.0}",
+              "paragraphSpacing": "{paragraphSpacing.0}",
+              "paragraphIndent": "{paragraphIndent.0}",
+              "textCase": "{textCase.none}",
+              "textDecoration": "{textDecoration.none}"
+            },
+            "type": "typography",
+            "description": "Figma-only design token.",
+            "figmaOnly": true
+          },
+          "multi-line - regular": {
+            "value": {
+              "fontFamily": "{fontFamilies.markformcnrw}",
+              "fontWeight": "{fontWeights.markformcnrw-4}",
+              "lineHeight": "{lineHeights.11}",
+              "fontSize": "{fontSize.3}",
+              "letterSpacing": "{letterSpacing.0}",
+              "paragraphSpacing": "{paragraphSpacing.0}",
+              "paragraphIndent": "{paragraphIndent.0}",
+              "textCase": "{textCase.none}",
+              "textDecoration": "{textDecoration.none}"
+            },
+            "type": "typography",
+            "description": "Figma-only design token.",
+            "figmaOnly": true
+          }
+        },
+        "regular": {
+          "single-line": {
+            "value": {
+              "fontFamily": "{fontFamilies.mark-offc-for-mc}",
+              "fontWeight": "{fontWeights.mark-offc-for-mc-1}",
+              "lineHeight": "{lineHeights.13}",
+              "fontSize": "{fontSize.3}",
+              "letterSpacing": "{letterSpacing.0}",
+              "paragraphSpacing": "{paragraphSpacing.0}",
+              "paragraphIndent": "{paragraphIndent.0}",
+              "textCase": "{textCase.none}",
+              "textDecoration": "{textDecoration.none}"
+            },
+            "type": "typography",
+            "description": "Figma-only design token.",
+            "figmaOnly": true
+          }
+        }
+      },
+      "15px": {
+        "narrow - single-line": {
+          "value": {
+            "fontFamily": "{fontFamilies.markformcnrw}",
+            "fontWeight": "{fontWeights.markformcnrw-4}",
+            "lineHeight": "{lineHeights.13}",
+            "fontSize": "{fontSize.4}",
+            "letterSpacing": "{letterSpacing.0}",
+            "paragraphSpacing": "{paragraphSpacing.0}",
+            "paragraphIndent": "{paragraphIndent.0}",
+            "textCase": "{textCase.none}",
+            "textDecoration": "{textDecoration.none}"
+          },
+          "type": "typography",
+          "description": "Figma-only design token.",
+          "figmaOnly": true
+        },
+        "medium - single-line": {
+          "value": {
+            "fontFamily": "{fontFamilies.mark-offc-for-mc}",
+            "fontWeight": "{fontWeights.mark-offc-for-mc-2}",
+            "lineHeight": "{lineHeights.15}",
+            "fontSize": "{fontSize.4}",
+            "letterSpacing": "{letterSpacing.0}",
+            "paragraphSpacing": "{paragraphSpacing.0}",
+            "paragraphIndent": "{paragraphIndent.0}",
+            "textCase": "{textCase.none}",
+            "textDecoration": "{textDecoration.none}"
+          },
+          "type": "typography",
+          "figmaOnly": true
+        },
+        "narrow - medium - single-line": {
+          "value": {
+            "fontFamily": "{fontFamilies.markformcnrw}",
+            "fontWeight": "{fontWeights.markformcnrw-5}",
+            "lineHeight": "{lineHeights.15}",
+            "fontSize": "{fontSize.4}",
+            "letterSpacing": "{letterSpacing.0}",
+            "paragraphSpacing": "{paragraphSpacing.0}",
+            "paragraphIndent": "{paragraphIndent.0}",
+            "textCase": "{textCase.none}",
+            "textDecoration": "{textDecoration.none}"
+          },
+          "type": "typography",
+          "description": "Figma-only design token.",
+          "figmaOnly": true
+        }
+      },
+      "16px": {
+        "single-line": {
+          "value": {
+            "fontFamily": "{fontFamilies.mark-offc-for-mc}",
+            "fontWeight": "{fontWeights.mark-offc-for-mc-1}",
+            "lineHeight": "{lineHeights.16}",
+            "fontSize": "{fontSize.5}",
+            "letterSpacing": "{letterSpacing.0}",
+            "paragraphSpacing": "{paragraphSpacing.0}",
+            "paragraphIndent": "{paragraphIndent.0}",
+            "textCase": "{textCase.none}",
+            "textDecoration": "{textDecoration.none}"
+          },
+          "type": "typography",
+          "description": "Figma-only design token.",
+          "figmaOnly": true
+        },
+        "single-line medium": {
+          "value": {
+            "fontFamily": "{fontFamilies.mark-offc-for-mc}",
+            "fontWeight": "{fontWeights.mark-offc-for-mc-2}",
+            "lineHeight": "{lineHeights.16}",
+            "fontSize": "{fontSize.5}",
+            "letterSpacing": "{letterSpacing.0}",
+            "paragraphSpacing": "{paragraphSpacing.0}",
+            "paragraphIndent": "{paragraphIndent.0}",
+            "textCase": "{textCase.none}",
+            "textDecoration": "{textDecoration.none}"
+          },
+          "type": "typography",
+          "description": "Figma-only design token.",
+          "figmaOnly": true
+        }
+      },
+      "20px": {
+        "multi-line": {
+          "value": {
+            "fontFamily": "{fontFamilies.markformcnrw}",
+            "fontWeight": "{fontWeights.markformcnrw-4}",
+            "lineHeight": "{lineHeights.10}",
+            "fontSize": "{fontSize.7}",
+            "letterSpacing": "{letterSpacing.0}",
+            "paragraphSpacing": "{paragraphSpacing.3}",
+            "paragraphIndent": "{paragraphIndent.0}",
+            "textCase": "{textCase.none}",
+            "textDecoration": "{textDecoration.none}"
+          },
+          "type": "typography",
+          "description": "Figma-only design token.",
+          "figmaOnly": true
+        }
+      },
+      "checkbox & radio label": {
+        "regular": {
+          "value": {
+            "fontFamily": "{fontFamilies.mark-offc-for-mc}",
+            "fontWeight": "{fontWeights.mark-offc-for-mc-1}",
+            "lineHeight": "{lineHeights.16}",
+            "fontSize": "{fontSize.3}",
+            "letterSpacing": "{letterSpacing.0}",
+            "paragraphSpacing": "{paragraphSpacing.0}",
+            "paragraphIndent": "{paragraphIndent.0}",
+            "textCase": "{textCase.none}",
+            "textDecoration": "{textDecoration.none}"
+          },
+          "type": "typography",
+          "description": "Figma-only design token.",
+          "figmaOnly": true
+        }
+      },
+      "data type pill": {
+        "single-line": {
+          "value": {
+            "fontFamily": "{fontFamilies.mark-offc-for-mc}",
+            "fontWeight": "{fontWeights.mark-offc-for-mc-3}",
+            "lineHeight": "{lineHeights.17}",
+            "fontSize": "{fontSize.0}",
+            "letterSpacing": "{letterSpacing.0}",
+            "paragraphSpacing": "{paragraphSpacing.0}",
+            "paragraphIndent": "{paragraphIndent.0}",
+            "textCase": "{textCase.none}",
+            "textDecoration": "{textDecoration.none}"
+          },
+          "type": "typography",
+          "description": "Figma-only design token.",
+          "figmaOnly": true
+        },
+        "multi-line": {
+          "value": {
+            "fontFamily": "{fontFamilies.mark-offc-for-mc}",
+            "fontWeight": "{fontWeights.mark-offc-for-mc-3}",
+            "lineHeight": "{lineHeights.13}",
+            "fontSize": "{fontSize.0}",
+            "letterSpacing": "{letterSpacing.0}",
+            "paragraphSpacing": "{paragraphSpacing.0}",
+            "paragraphIndent": "{paragraphIndent.0}",
+            "textCase": "{textCase.none}",
+            "textDecoration": "{textDecoration.none}"
+          },
+          "type": "typography",
+          "description": "Figma-only design token.",
+          "figmaOnly": true
+        }
+      },
+      "form field": {
+        "label": {
+          "value": {
+            "fontFamily": "{fontFamilies.mark-offc-for-mc}",
+            "fontWeight": "{fontWeights.mark-offc-for-mc-1}",
+            "lineHeight": "{lineHeights.18}",
+            "fontSize": "{fontSize.1}",
+            "letterSpacing": "{letterSpacing.0}",
+            "paragraphSpacing": "{paragraphSpacing.0}",
+            "paragraphIndent": "{paragraphIndent.0}",
+            "textCase": "{textCase.none}",
+            "textDecoration": "{textDecoration.none}"
+          },
+          "type": "typography",
+          "description": "Figma-only design token.",
+          "figmaOnly": true
+        },
+        "input": {
+          "value": {
+            "fontFamily": "{fontFamilies.mark-offc-for-mc}",
+            "fontWeight": "{fontWeights.mark-offc-for-mc-1}",
+            "lineHeight": "{lineHeights.13}",
+            "fontSize": "{fontSize.3}",
+            "letterSpacing": "{letterSpacing.0}",
+            "paragraphSpacing": "{paragraphSpacing.0}",
+            "paragraphIndent": "{paragraphIndent.0}",
+            "textCase": "{textCase.none}",
+            "textDecoration": "{textDecoration.none}"
+          },
+          "type": "typography",
+          "description": "Figma-only design token.",
+          "figmaOnly": true
+        },
+        "search field": {
+          "default": {
+            "value": {
+              "fontFamily": "{fontFamilies.mark-offc-for-mc}",
+              "fontWeight": "{fontWeights.mark-offc-for-mc-1}",
+              "lineHeight": "{lineHeights.11}",
+              "fontSize": "{fontSize.3}",
+              "letterSpacing": "{letterSpacing.0}",
+              "paragraphSpacing": "{paragraphSpacing.0}",
+              "paragraphIndent": "{paragraphIndent.0}",
+              "textCase": "{textCase.none}",
+              "textDecoration": "{textDecoration.none}"
+            },
+            "type": "typography",
+            "description": "Figma-only design token.",
+            "figmaOnly": true
+          }
+        }
+      },
+      "logotype": {
+        "product name": {
+          "value": {
+            "fontFamily": "{fontFamilies.mark-offc-for-mc}",
+            "fontWeight": "{fontWeights.mark-offc-for-mc-0}",
+            "lineHeight": "{lineHeights.5}",
+            "fontSize": "{fontSize.7}",
+            "letterSpacing": "{letterSpacing.0}",
+            "paragraphSpacing": "{paragraphSpacing.0}",
+            "paragraphIndent": "{paragraphIndent.0}",
+            "textCase": "{textCase.none}",
+            "textDecoration": "{textDecoration.none}"
+          },
+          "type": "typography",
+          "description": "Figma-only design token.",
+          "figmaOnly": true
+        }
+      }
+    },
+    "textCase": {
+      "none": {
+        "value": "none",
+        "type": "textCase",
+        "description": "Figma-only design token.",
+        "figmaOnly": true
+      },
+      "uppercase": {
+        "value": "uppercase",
+        "type": "textCase",
+        "description": "Figma-only design token.",
+        "figmaOnly": true
+      }
+    },
+    "textDecoration": {
+      "none": {
+        "value": "none",
+        "type": "textDecoration",
+        "description": "Figma-only design token.",
+        "figmaOnly": true
+      },
+      "underline": {
+        "value": "underline",
+        "type": "textDecoration",
+        "description": "Figma-only design token.",
+        "figmaOnly": true
+      }
+    },
+    "paragraphIndent": {
+      "0": {
+        "value": "0px",
+        "type": "dimension",
+        "description": "Figma-only design token.",
+        "figmaOnly": true
       }
     }
   },
-  "light": {
-    "fg": {
-      "default": {
-        "value": "{colors.black}",
-        "type": "color"
-      },
-      "muted": {
-        "value": "{colors.gray.700}",
-        "type": "color"
-      },
-      "subtle": {
-        "value": "{colors.gray.500}",
-        "type": "color"
+  "component": {
+    "shadow": {
+      "toggle": {
+        "description": "Shadow on slider on toggle component.",
+        "themeable": "No",
+        "type": "boxShadow",
+        "value": "0 5px 10px 0 rgba(20,20,19,0.15), 0 2px 2px 0 rgba(20,20,19,0.3);"
       }
     },
-    "bg": {
-      "default": {
-        "value": "{colors.white}",
-        "type": "color"
+    "z-index": {
+      "backdrop": {
+        "description": "Used to set the z order layering of backdrop.",
+        "themeable": "No",
+        "type": "other",
+        "value": "40"
       },
-      "muted": {
-        "value": "{colors.gray.100}",
-        "type": "color"
+      "dropdown": {
+        "description": "Used to set the z order layering of dropdown elements such as overflow menu, date picker...",
+        "themeable": "No",
+        "type": "other",
+        "value": "30"
       },
-      "subtle": {
-        "value": "{colors.gray.200}",
-        "type": "color"
-      }
-    },
-    "accent": {
-      "default": {
-        "value": "{colors.indigo.400}",
-        "type": "color"
+      "modal": {
+        "description": "Used to set the z order layering of modal.",
+        "themeable": "No",
+        "type": "other",
+        "value": "50"
       },
-      "onAccent": {
-        "value": "{colors.white}",
-        "type": "color"
-      },
-      "bg": {
-        "value": "{colors.indigo.200}",
-        "type": "color"
-      }
-    },
-    "shadows": {
-      "default": {
-        "value": "{colors.gray.900}",
-        "type": "color"
+      "toast": {
+        "description": "Used to set the z order layering of toast.",
+        "themeable": "No",
+        "type": "other",
+        "value": "50"
       }
     }
   },
-  "dark": {
-    "fg": {
-      "default": {
-        "value": "{colors.white}",
-        "type": "color"
-      },
-      "muted": {
-        "value": "{colors.gray.300}",
-        "type": "color"
-      },
-      "subtle": {
-        "value": "{colors.gray.500}",
-        "type": "color"
-      }
-    },
-    "bg": {
-      "default": {
-        "value": "{colors.gray.900}",
-        "type": "color"
-      },
-      "muted": {
-        "value": "{colors.gray.700}",
-        "type": "color"
-      },
-      "subtle": {
-        "value": "{colors.gray.600}",
-        "type": "color"
-      }
-    },
-    "accent": {
-      "default": {
-        "value": "{colors.indigo.600}",
-        "type": "color"
-      },
-      "onAccent": {
-        "value": "{colors.white}",
-        "type": "color"
-      },
-      "bg": {
-        "value": "{colors.indigo.800}",
-        "type": "color"
-      }
-    },
-    "shadows": {
-      "default": {
-        "value": "rgba({colors.black}, 0.3)",
-        "type": "color"
-      }
-    }
-  },
-  "theme": {
+  "Demo App/Default": {
     "button": {
-      "primary": {
-        "background": {
-          "value": "{accent.default}",
+      "border-radius": {
+        "value": "{border.radius.02}",
+        "type": "borderRadius"
+      }
+    },
+    "forms": {
+      "color": {
+        "border": {
+          "default": {
+            "value": "{color.gray.03}",
+            "type": "color"
+          }
+        }
+      }
+    },
+    "color": {
+      "background": {
+        "gray-lightest": {
+          "value": "{color.gray.01}",
           "type": "color"
+        }
+      },
+      "action": {
+        "background": {
+          "hover": {
+            "value": "{color.gray.01-5}",
+            "type": "color"
+          },
+          "tertiary": {
+            "default": {
+              "value": "{color.gray.02}",
+              "type": "color"
+            }
+          }
+        }
+      }
+    },
+    "header": {
+      "color": {
+        "background": {
+          "value": "{color.gray.06-5}",
+          "type": "color"
+        }
+      }
+    },
+    "image": {
+      "logo": {
+        "value": "data:image/png;base64,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",
+        "type": "asset"
+      },
+      "rewards": {
+        "value": "https://images.unsplash.com/photo-1527631746610-bca00a040d60?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80",
+        "type": "asset"
+      },
+      "logo-settings": {
+        "value": "data:image/png;base64,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",
+        "type": "asset"
+      }
+    }
+  },
+  "Demo App/Dark": {
+    "button": {
+      "border-radius": {
+        "value": "{border.radius.02}",
+        "type": "borderRadius"
+      }
+    },
+    "forms": {
+      "color": {
+        "border": {
+          "default": {
+            "value": "{color.border.default.on-dark}",
+            "type": "color"
+          }
+        },
+        "background": {
+          "default": {
+            "value": "{color.gray.06-5}",
+            "type": "color"
+          }
+        }
+      }
+    },
+    "color": {
+      "background": {
+        "gray-lightest": {
+          "value": "{color.gray.07}",
+          "type": "color"
+        },
+        "default": {
+          "value": "{color.gray.06-5}",
+          "type": "color"
+        }
+      },
+      "text": {
+        "default": {
+          "on-light": {
+            "value": "{color.white}",
+            "type": "color"
+          },
+          "on-dark": {
+            "value": "{color.gray.07}",
+            "type": "color"
+          }
+        },
+        "helper": {
+          "value": "{color.gray.02}",
+          "type": "color"
+        },
+        "primary": {
+          "value": "{color.orange.03}",
+          "type": "color"
+        }
+      },
+      "border": {
+        "default": {
+          "on-light": {
+            "value": "{color.border.default.on-dark}",
+            "type": "color"
+          }
+        }
+      },
+      "action": {
+        "background": {
+          "primary": {
+            "default": {
+              "value": "{color.white}",
+              "type": "color"
+            }
+          },
+          "on": {
+            "value": "#35B132",
+            "type": "color"
+          },
+          "hover": {
+            "value": "{color.gray.05-5}",
+            "type": "color"
+          },
+          "tertiary": {
+            "default": {
+              "value": "{color.gray.05-5}",
+              "type": "color"
+            }
+          }
         },
         "text": {
-          "value": "{accent.onAccent}",
+          "on-primary": {
+            "value": "{color.gray.07}",
+            "type": "color"
+          }
+        },
+        "primary": {
+          "default": {
+            "value": "{color.white}",
+            "type": "color"
+          }
+        }
+      }
+    },
+    "header": {
+      "color": {
+        "background": {
+          "value": "{color.gray.06-5}",
           "type": "color"
         }
-      },
-      "borderRadius": {
-        "value": "{borderRadius.md}",
-        "type": "borderRadius"
-      },
-      "borderWidth": {
-        "value": "{dimension.sm}",
-        "type": "borderWidth"
       }
     },
-    "card": {
-      "borderRadius": {
-        "value": "{borderRadius.lg}",
-        "type": "borderRadius"
-      },
-      "background": {
-        "value": "{bg.default}",
-        "type": "color"
-      },
-      "padding": {
-        "value": "{dimension.md}",
-        "type": "dimension"
-      }
-    },
-    "boxShadow": {
-      "default": {
-        "value": [
-          {
-            "x": "5",
-            "y": "5",
-            "spread": "3",
-            "color": "rgba({shadows.default}, 0.15)",
-            "blur": "5",
-            "type": "dropShadow"
-          },
-          {
-            "x": "4",
-            "y": "4",
-            "spread": "6",
-            "color": "#00000033",
-            "blur": "5",
-            "type": "innerShadow"
-          }
-        ],
-        "type": "boxShadow"
-      }
-    },
-    "typography": {
-      "H1": {
-        "Bold": {
-          "value": {
-            "fontFamily": "{fontFamilies.heading}",
-            "fontWeight": "{fontWeights.headingBold}",
-            "lineHeight": "{lineHeights.heading}",
-            "fontSize": "{fontSizes.h1}",
-            "paragraphSpacing": "{paragraphSpacing.h1}",
-            "letterSpacing": "{letterSpacing.decreased}"
-          },
-          "type": "typography"
-        },
-        "Regular": {
-          "value": {
-            "fontFamily": "{fontFamilies.heading}",
-            "fontWeight": "{fontWeights.headingRegular}",
-            "lineHeight": "{lineHeights.heading}",
-            "fontSize": "{fontSizes.h1}",
-            "paragraphSpacing": "{paragraphSpacing.h1}",
-            "letterSpacing": "{letterSpacing.decreased}"
-          },
-          "type": "typography"
+    "link": {
+      "color": {
+        "default": {
+          "value": "{color.white}",
+          "type": "color"
         }
-      },
-      "H2": {
-        "Bold": {
-          "value": {
-            "fontFamily": "{fontFamilies.heading}",
-            "fontWeight": "{fontWeights.headingBold}",
-            "lineHeight": "{lineHeights.heading}",
-            "fontSize": "{fontSizes.h2}",
-            "paragraphSpacing": "{paragraphSpacing.h2}",
-            "letterSpacing": "{letterSpacing.decreased}"
-          },
-          "type": "typography"
-        },
-        "Regular": {
-          "value": {
-            "fontFamily": "{fontFamilies.heading}",
-            "fontWeight": "{fontWeights.headingRegular}",
-            "lineHeight": "{lineHeights.heading}",
-            "fontSize": "{fontSizes.h2}",
-            "paragraphSpacing": "{paragraphSpacing.h2}",
-            "letterSpacing": "{letterSpacing.decreased}"
-          },
-          "type": "typography"
-        }
-      },
-      "Body": {
-        "value": {
-          "fontFamily": "{fontFamilies.body}",
-          "fontWeight": "{fontWeights.bodyRegular}",
-          "lineHeight": "{lineHeights.heading}",
-          "fontSize": "{fontSizes.body}",
-          "paragraphSpacing": "{paragraphSpacing.h2}"
-        },
-        "type": "typography"
+      }
+    },
+    "image": {
+      "logo": {
+        "value": "data:image/png;base64,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",
+        "type": "asset"
       }
     }
   },
-  "$themes": [],
+  "Demo App/PartnerBank": {
+    "button": {
+      "border-radius": {
+        "value": "{border.radius.02}",
+        "type": "borderRadius"
+      }
+    },
+    "forms": {
+      "color": {
+        "border": {
+          "default": {
+            "value": "{color.gray.03}",
+            "type": "color"
+          }
+        }
+      }
+    },
+    "color": {
+      "background": {
+        "gray-lightest": {
+          "value": "#F6F8F9",
+          "type": "color"
+        }
+      },
+      "action": {
+        "background": {
+          "primary": {
+            "default": {
+              "value": "#137480",
+              "type": "color"
+            }
+          }
+        }
+      },
+      "text": {
+        "primary": {
+          "value": "#137480",
+          "type": "color"
+        }
+      }
+    },
+    "header": {
+      "color": {
+        "background": {
+          "value": "#06171A",
+          "type": "color"
+        }
+      }
+    },
+    "fontFamilies": {
+      "mark-offc-for-mc": {
+        "value": "Playfair Display",
+        "type": "fontFamilies"
+      }
+    },
+    "link": {
+      "color": {
+        "default": {
+          "value": "#137480",
+          "type": "color"
+        }
+      }
+    },
+    "image": {
+      "logo": {
+        "value": "data:image/png;base64,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",
+        "type": "asset"
+      },
+      "rewards": {
+        "value": "https://images.unsplash.com/photo-1604537466158-719b1972feb8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3538&q=80",
+        "type": "asset"
+      },
+      "logo-settings": {
+        "value": "data:image/png;base64,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",
+        "type": "asset"
+      }
+    },
+    "heading": {
+      "h2": {
+        "value": {
+          "fontFamily": "Playfair Display",
+          "fontWeight": "{font.weight.default}",
+          "lineHeight": "{font.heading.line-height.level.01}",
+          "fontSize": "{font.heading.size.level.02}",
+          "letterSpacing": "{font.heading.letter-spacing.level.03}"
+        },
+        "type": "typography"
+      },
+      "display": {
+        "h3": {
+          "value": {
+            "fontFamily": "Playfair Display",
+            "fontWeight": "{font.weight.bold}"
+          },
+          "type": "typography"
+        }
+      }
+    }
+  },
+  "$themes": [
+    {
+      "id": "11653cf4d93d536b23c5fb6ed20bd8b7f436136e",
+      "name": "Default",
+      "selectedTokenSets": {
+        "global": "enabled",
+        "role": "enabled",
+        "component": "enabled",
+        "Demo App/Default": "enabled"
+      },
+      "$figmaStyleReferences": {}
+    },
+    {
+      "id": "089a5d3b718d91490f1d4ae5e7fe19807208bb28",
+      "name": "Dark",
+      "selectedTokenSets": {
+        "global": "enabled",
+        "role": "enabled",
+        "component": "enabled",
+        "Demo App/Default": "enabled",
+        "Demo App/Dark": "enabled"
+      },
+      "$figmaStyleReferences": {}
+    },
+    {
+      "id": "41da0967c7f79271310b386331da17f89091bcaa",
+      "name": "PartnerBank",
+      "selectedTokenSets": {
+        "global": "enabled",
+        "role": "enabled",
+        "component": "enabled",
+        "Demo App/Default": "enabled",
+        "Demo App/PartnerBank": "enabled"
+      },
+      "$figmaStyleReferences": {}
+    }
+  ],
   "$metadata": {
     "tokenSetOrder": [
-      "core",
-      "light",
-      "dark",
-      "theme"
+      "global",
+      "role",
+      "component",
+      "Demo App/Default",
+      "Demo App/Dark",
+      "Demo App/PartnerBank"
     ]
   }
 }
